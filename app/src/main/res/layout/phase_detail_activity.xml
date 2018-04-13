@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="net.coding.mart.json.v2.phase.Phase" />
+    </data>
+
+    <FrameLayout
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/divide">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/stand_bg"
+                android:orientation="vertical">
+
+                <include layout="@layout/divide_10_top" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/SectionTitle"
+                        android:layout_width="wrap_content"
+                        android:text="@{data.PString1}"
+                        tools:text="P2" />
+
+                    <android.support.v4.widget.Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:text="@{data.status.alics}"
+                        android:textColor="@{data.status.color}"
+                        android:textSize="14dp"
+                        tools:text="开发中" />
+
+                </LinearLayout>
+
+                <View style="@style/DivideLine_15_left" />
+
+                <LinearLayout
+                    style="@style/ItemLayoutV"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:minHeight="40dp">
+
+                    <TextView
+                        style="@style/ItemLeftText.Top"
+                        android:text="阶段名称" />
+
+                    <TextView
+                        style="@style/ItemRightTextBottomMul"
+                        android:text="@{data.name}"
+                        tools:text="吃鸡1吃鸡1吃鸡1吃鸡1吃鸡1吃鸡1吃鸡1吃鸡1吃鸡1吃鸡1吃鸡1吃鸡1吃鸡1吃鸡1吃鸡1" />
+
+                </LinearLayout>
+
+                <View
+                    style="@style/DivideLine_15_left"
+                    android:layout_marginTop="10dp" />
+
+                <LinearLayout
+                    style="@style/ItemLayoutV"
+                    android:background="@color/transparent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/ItemLeftText.Top"
+                            android:layout_weight="1"
+                            android:text="计划交付日期" />
+
+                        <TextView
+                            android:id="@+id/realPlanTitle"
+                            style="@style/ItemLeftText.Top"
+                            android:layout_weight="1"
+                            android:text="实际交付日期"
+                            android:visibility="@{data.showActualDate()}" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/ItemRightText.Bottom"
+                            android:layout_weight="1"
+                            android:text="@{data.planString1}" />
+
+                        <TextView
+                            style="@style/ItemRightText.Bottom"
+                            android:layout_weight="1"
+                            android:text="@{data.actualPlanString1}"
+                            android:visibility="@{data.showActualDate()}"
+                            tools:text="aaa" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    style="@style/DivideLine_15_left"
+                    android:layout_marginTop="10dp" />
+
+                <LinearLayout
+                    style="@style/ItemLayoutV"
+                    android:background="@color/transparent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/ItemLeftText.Top"
+                            android:layout_weight="1"
+                            android:text="计划金额" />
+
+                        <TextView
+                            style="@style/ItemLeftText.Top"
+                            android:layout_weight="1"
+                            android:text="实际金额"
+                            android:visibility="@{data.showActual()}" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/ItemRightText.Bottom"
+                            android:layout_weight="1"
+                            android:text="@{data.priceString1}" />
+
+                        <TextView
+                            style="@style/ItemRightText.Bottom"
+                            android:layout_weight="1"
+                            android:text="@{data.actualPriceString1}"
+                            android:visibility="@{data.showActual()}" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    style="@style/DivideLine_15_left"
+                    android:layout_marginTop="10dp" />
+
+                <LinearLayout
+                    style="@style/ItemLayoutV"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/transparent"
+                    android:minHeight="40dp">
+
+                    <TextView
+                        style="@style/ItemLeftText.Top"
+                        android:text="交付说明" />
+
+                    <TextView
+                        style="@style/ItemRightTextBottomMul"
+                        android:text="@{data.deliveryNote}"
+                        tools:text="222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/starLayout"
+                    android:visibility="@{data.showActual()}"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <com.willy.ratingbar.BaseRatingBar
+                        android:id="@+id/stars"
+                        android:layout_width="80dp"
+                        android:layout_height="17dp"
+                        app:drawableEmpty="@mipmap/star_big_grey"
+                        app:drawableFilled="@mipmap/star_big_yellow"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+                        app:layout_constraintLeft_toRightOf="@+id/textView5"
+                        app:layout_constraintTop_toTopOf="@+id/textView5"
+                        app:numStars="5"
+                        app:rating="3"
+                        app:starHeight="16dp"
+                        app:starPadding="1.8dp"
+                        app:starWidth="16dp"
+                        app:touchable="false" />
+
+                    <TextView
+                        android:layout_width="42dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="8dp"
+                        android:text="未评分"
+                        android:id="@+id/starsText"
+                        android:textColor="#FF273444"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <include layout="@layout/divide_5_bottom" />
+
+            </LinearLayout>
+
+        </ScrollView>
+    </FrameLayout>
+
+</layout>

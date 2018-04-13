@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+        <TextView
+                style="@style/TextColor2"
+                android:layout_marginTop="50dp"
+                android:text="联系方式"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+        <TextView
+                style="@style/TextColor6"
+                android:layout_marginTop="20dp"
+                android:lineSpacingExtra="3dp"
+                android:gravity="center_horizontal"
+                android:text="深圳市 · 南山区 · 科技南十二路 · 方大大厦 1701"
+                android:textSize="12sp"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    style="@style/TextColor6"
+                    android:paddingTop="3dp"
+                    android:id="@+id/phone"
+                    android:gravity="center_horizontal"
+                    android:text="400-992-1001 |"
+                    android:textSize="12sp"/>
+
+            <TextView
+                    style="@style/TextColor6"
+                    android:paddingTop="3dp"
+                    android:id="@+id/email"
+                    android:gravity="center_horizontal"
+                    android:text=" support@codemart.com"
+                    android:textSize="12sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

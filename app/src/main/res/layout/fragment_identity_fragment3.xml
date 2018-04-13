@@ -1,0 +1,142 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divide"
+    tools:context="net.coding.mart.user.identityAuthentication.IdentityFragment3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/stand_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="20dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="25dp">
+
+            <View
+                android:id="@+id/icon"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:background="@mipmap/developer_pay_success" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/icon"
+                android:text="认证通过！"
+                android:textColor="@color/font_black_2"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tipContent"
+                android:lineSpacingExtra="2dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/title"
+                android:layout_below="@id/title"
+                android:layout_marginTop="5dp"
+                android:text="验证通过后无法自行修改。如果需要修改认证信息请 联系客服"
+                android:textColor="@color/font_black_9"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/divide_10_top_bottom" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/identityTip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@mipmap/ic_ia_demo"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:text="认证说明"
+                android:textColor="@color/font_black_9"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@mipmap/identity_id_card"
+                    tools:text="AllenTse"
+                    android:textColor="@color/font_black_2"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/idType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="证件类型："
+                    android:textColor="@color/font_black_9"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/idCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="身份证号: ："
+                    android:textColor="@color/font_black_9"
+                    android:textSize="14sp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/download"
+                    android:layout_marginTop="15dp"
+                    android:visibility="gone"
+                    android:background="@drawable/project_exp_file"
+                    android:gravity="center_vertical|left"
+                    android:textColor="@color/font_blue" >
+                    
+                    <TextView
+                        android:layout_width="20dp"
+                        android:text="PDF"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="7dp"
+                        android:gravity="center"
+                        android:background="@drawable/rect_blue_fill"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white"
+                        android:layout_height="20dp" />
+
+                    <TextView
+                        android:layout_marginLeft="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/font_blue"
+                        android:text="签署身份认证授权与承诺书.pdf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <include layout="@layout/divide_10_bottom" />
+
+    </LinearLayout>
+</ScrollView>

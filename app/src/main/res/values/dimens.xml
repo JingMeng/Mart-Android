@@ -1,0 +1,115 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">15dp</dimen>
+    <dimen name="activity_vertical_margin">15dp</dimen>
+
+    <dimen name="list_item_padding_w">12dp</dimen>
+
+    <dimen name="padding_15">15dp</dimen>
+    <dimen name="padding_12">12dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+
+    <dimen name="toast_y">64dp</dimen>
+
+    <dimen name="list_item_icon_left">15dp</dimen>
+    <dimen name="list_item_icon_right">15dp</dimen>
+    <dimen name="list_item_1_height">54dp</dimen>
+
+    <dimen name="image_square_width">80dp</dimen>
+    <dimen name="image_single_width">200dp</dimen>
+    <dimen name="image_single_min_width">80dp</dimen>
+
+    <dimen name="image_single_micro_width">60dp</dimen>
+    <dimen name="image_single_min_size">150dp</dimen>
+
+
+    <dimen name="list_header_space">10dp</dimen>
+    <dimen name="list_footer_space">64dp</dimen>
+    <dimen name="list_footer_shadow_space">10dp</dimen>
+    <dimen name="list_divide_line_height">0.5dp</dimen>
+
+    <dimen name="message_user_icon_width">40dp</dimen>
+
+    <dimen name="bottom_navigation_bar_height">56dp</dimen>
+
+    <dimen name="user_icon_width">70dp</dimen>
+
+    <dimen name="recycler_space">10dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="card_z">1.8dp</dimen>
+    <dimen name="fill_width_card_merge">-2dp</dimen>
+
+    <dimen name="navigation_elevation">8dp</dimen>
+
+    <dimen name="message_time_height">33dp</dimen>
+
+    <!--顶层 view 的 z 轴, 设大一点-->
+    <dimen name="top_z">20dp</dimen>
+
+    <dimen name="subway_line_height">0.7dp</dimen>
+    <dimen name="subway_line_width">53dp</dimen>
+    <dimen name="subway_line_width_half">26dp</dimen>
+    <dimen name="subway_text_space">5dp</dimen>
+    <dimen name="subway_text_top_sapce">50dp</dimen>
+    <dimen name="subway_point_width">3dp</dimen>
+
+    <dimen name="reward_dynamic_line_top">32dp</dimen>
+
+    <dimen name="category_list_width">100dp</dimen>
+    <dimen name="category_list_width_fold">65dp</dimen>
+    <dimen name="module_list_width">125dp</dimen>
+
+    <dimen name="mpay_dynamic_list_item_height">96dp</dimen>
+
+    <dimen name="dialog_botton_height">48dp</dimen>
+
+
+    <!--1080 -->
+    <dimen name="dp1080_2">1dp</dimen>
+    <dimen name="dp1080_4">1dp</dimen>
+    <dimen name="dp1080_15">5dp</dimen>
+    <dimen name="dp1080_18">6dp</dimen>
+    <dimen name="dp1080_20">7dp</dimen>
+    <dimen name="dp1080_24">8dp</dimen>
+    <dimen name="dp1080_30">10dp</dimen>
+    <dimen name="dp1080_34">11dp</dimen>
+    <dimen name="dp1080_35">12dp</dimen>
+    <dimen name="dp1080_36">12dp</dimen>
+    <dimen name="dp1080_37">12dp</dimen>
+    <dimen name="dp1080_38">13dp</dimen>
+    <dimen name="dp1080_40">13dp</dimen>
+    <dimen name="dp1080_42">14dp</dimen>
+    <dimen name="dp1080_45">15dp</dimen>
+    <dimen name="dp1080_48">16dp</dimen>
+    <dimen name="dp1080_50">17dp</dimen>
+    <dimen name="dp1080_60">20dp</dimen>
+    <dimen name="dp1080_63">21dp</dimen>
+    <dimen name="dp1080_75">25dp</dimen>
+    <dimen name="dp1080_90">30dp</dimen>
+    <dimen name="dp1080_100">33dp</dimen>
+    <dimen name="dp1080_120">40dp</dimen>
+    <dimen name="dp1080_121">40dp</dimen>
+    <dimen name="dp1080_125">42dp</dimen>
+    <dimen name="dp1080_135">45dp</dimen>
+    <dimen name="dp1080_144">48dp</dimen>
+    <dimen name="dp1080_149">50dp</dimen>
+    <dimen name="dp1080_150">50dp</dimen>
+    <dimen name="dp1080_180">60dp</dimen>
+    <dimen name="dp1080_200">67dp</dimen>
+    <dimen name="dp1080_210">70dp</dimen>
+    <dimen name="dp1080_260">87dp</dimen>
+    <dimen name="dp1080_330">110dp</dimen>
+    <dimen name="dp1080_480">160dp</dimen>
+    <dimen name="dp1080_495">165dp</dimen>
+
+
+    <dimen name="sp1080_36">12sp</dimen>
+    <dimen name="sp1080_42">14sp</dimen>
+    <dimen name="sp1080_45">15sp</dimen>
+    <dimen name="sp1080_48">16sp</dimen>
+    <dimen name="sp1080_53">18sp</dimen>
+    <dimen name="sp1080_54">18sp</dimen>
+    <dimen name="sp1080_72">24sp</dimen>
+
+</resources>

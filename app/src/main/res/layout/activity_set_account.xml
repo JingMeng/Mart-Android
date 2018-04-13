@@ -1,0 +1,203 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divide">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/YellowTipTitleTextView"
+            android:text="您的个人信息不会透露给任何第三方，请放心填写" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/stand_bg"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="填写正确的个人信息，让 Coding 可以联系上您，以下信息不用于账户登录。"
+                android:textColor="@color/font_black_9"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/EditTextTitle"
+                android:text="姓名 *" />
+
+            <EditText
+                android:id="@+id/name"
+                style="@style/SingleLineEditText"
+                android:hint="姓名" />
+
+            <include layout="@layout/divide_1" />
+
+
+            <TextView
+                style="@style/EditTextTitle"
+                android:layout_marginTop="@dimen/padding_15"
+                android:text="QQ" />
+
+            <EditText
+                android:id="@+id/qq"
+                style="@style/SingleLineEditText"
+                android:hint="QQ号码" />
+
+            <include layout="@layout/divide_1" />
+
+            <TextView
+                style="@style/EditTextTitle"
+                android:layout_marginTop="@dimen/padding_15"
+                android:text="所在地 *" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_15"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/local"
+                    style="@style/SingleCheckTextView"
+                    android:layout_width="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:minHeight="0dp"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/divide_10_top_bottom" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/stand_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_15">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/EditTextTitle"
+                        android:layout_marginTop="0dp"
+                        android:text="工作 E-mail *" />
+
+
+                    <TextView
+                        android:id="@+id/emailValid"
+                        style="@style/EditTextTitle"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="15dp"
+                        android:text="已验证"
+                        android:textColor="@color/font_green" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/email"
+                    style="@style/SingleCheckTextView"
+                    android:hint="邮箱 *" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/EditTextTitle"
+                        android:text="工作手机 *" />
+
+                    <TextView
+                        android:id="@+id/phoneValid"
+                        style="@style/EditTextTitle"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="@dimen/padding_15"
+                        android:text="已验证"
+                        android:textColor="@color/font_green" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/phoneLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/phone"
+                        style="@style/SingleCheckTextView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="未填写"
+                        android:inputType="phone"
+                        android:lines="1"
+                        android:minHeight="0dp"
+                        android:paddingLeft="70dp"
+                        android:singleLine="true" />
+
+                    <TextView
+                        android:id="@+id/countryCode"
+                        style="@style/SingleCheckTextView"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:lines="1"
+                        android:minHeight="0dp"
+                        android:singleLine="true"
+                        tools:text="+868" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <View style="@style/ShadowTop" />
+
+            <Button
+                android:id="@+id/sendButton"
+                style="@style/SendButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:enabled="true"
+                android:text="保存" />
+
+            <View style="@style/ShadowBottom" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

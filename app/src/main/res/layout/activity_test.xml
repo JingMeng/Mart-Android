@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="net.coding.mart.TestActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="click0"
+        android:text="Button 0" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:onClick="click1"
+        android:text="Button 1" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:onClick="click2"
+        android:text="Button 2" />
+
+
+    <com.willy.ratingbar.BaseRatingBar
+        android:id="@+id/stars"
+        android:layout_width="80dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:drawableEmpty="@mipmap/star_small_grey"
+        app:drawableFilled="@mipmap/star_small_yellow"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintLeft_toRightOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/textView5"
+        app:numStars="5"
+        app:rating="3"
+        app:starHeight="1.6dp"
+        app:touchable="false"
+        app:starPadding="1.8dp"
+        app:starWidth="16dp" />
+
+
+    <com.willy.ratingbar.BaseRatingBar
+        android:id="@+id/baseratingbar_main"
+        android:layout_width="80dp"
+        android:layout_height="17dp"
+        app:drawableEmpty="@mipmap/star_small_grey"
+        app:drawableFilled="@mipmap/star_small_yellow"
+        app:numStars="5"
+        app:rating="4.2"
+        app:touchable="false"
+        app:starWidth="16dp"
+        app:starPadding="1.8dp" />
+
+    <com.willy.ratingbar.BaseRatingBar
+        android:id="@+id/simpleRatingBar"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@color/grey"
+        app:clearRatingEnabled="true"
+        app:numStars="5"
+        app:rating="4.3"
+        app:starHeight="30dp"
+        app:starPadding="15dp"
+        app:starWidth="30dp"
+        app:stepSize="0.5"
+        app:touchable="true" />
+
+    <!--app:drawableEmpty="@mipmap/star_small_grey"-->
+    <!--app:drawableFilled="@mipmap/star_small_yellow">-->
+
+</LinearLayout>

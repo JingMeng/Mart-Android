@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="54dp"
+    android:foreground="?attr/selectableItemBackground"
+    android:background="@drawable/list_item_selector">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:scaleType="centerInside"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/list_item_icon_left"
+        tools:visibility="gone"
+        android:src="@mipmap/ic_list_codersay" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/icon"
+        android:layout_marginLeft="@dimen/list_item_icon_right"
+        tools:text="检查更新"
+        android:textColor="#222222"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/list_item_icon_right"
+        tools:text="text2"
+        android:textColor="@color/warn_or_waiting_font_color"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/badge"
+        android:layout_width="9dp"
+        android:layout_height="9dp"
+        android:layout_marginRight="19.5dp"
+        android:background="@mipmap/ic_notify"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible" />
+
+    <View
+        android:layout_marginLeft="@dimen/list_item_icon_left"
+        android:layout_marginRight="@dimen/list_item_icon_left"
+        android:id="@+id/bottomLine"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/divide_line" />
+
+</RelativeLayout>
+

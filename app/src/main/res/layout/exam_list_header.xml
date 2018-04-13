@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/passedTip"
+        style="@style/YellowTipTitleTextView"
+        android:text="您已经通过本次秘笈测试，马上开始报名码市的项目吧！" />
+
+    <TextView
+        android:id="@+id/errorTip"
+        style="@style/YellowTipTitleTextView"
+        android:background="@color/tip_font_red_bg"
+        android:text="您有15个问题回答错误，请找到回答错误的问题并查看正确答案，然后重新答题。"
+        android:textColor="@color/tip_font_red" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="测试中所指的「开发者」包括：产品经理、项目顾问、UI 设计师、软件工程师、测试工程师。「开发者」是个统称。"
+        android:textColor="@color/font_black_9"
+        android:textSize="13sp" />
+
+</LinearLayout>

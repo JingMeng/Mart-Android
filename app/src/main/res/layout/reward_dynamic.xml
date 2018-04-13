@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="dynamic"
+            type="net.coding.mart.json.reward.RewardDynamic" />
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/userIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:civ_border="false"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp" />
+
+        <ImageView
+            android:id="@+id/lineAnchor"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="12.7dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/reward_dynamic_line_top"
+            android:layout_toRightOf="@id/userIcon"
+            android:src="@mipmap/reward_dynamic_point" />
+
+        <View
+            android:id="@+id/lineTop"
+            android:layout_alignParentTop="true"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/lineAnchor"
+            android:layout_marginLeft="3.48dp"
+            android:layout_alignBottom="@id/lineAnchor"
+            android:layout_width="0.7dp"
+            android:background="#FFA9A9A9" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27.7dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/contentLayout"
+            android:layout_toRightOf="@id/userIcon"
+            android:background="@drawable/reward_dynamic_background"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{dynamic.user.name}"
+                    android:textColor="@color/font_blue"
+                    android:textSize="16sp"
+                    tools:text="张三" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@{dynamic.activity.formatCreatedAt}"
+                    android:gravity="right|center_vertical"
+                    tools:text="2015-11-05 11:21" />
+            </LinearLayout>
+
+            <net.coding.mart.common.widget.NotifyHtmlTextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/font_black_2"
+                android:textSize="14sp"
+                tools:text="在线支付了 ¥8,000 的项目费用" />
+
+            <net.coding.mart.common.widget.NotifyHtmlTextView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/font_black_6"
+                android:textSize="14sp"
+                tools:text="备注：张三 银行转账／支付宝转账，账户名 张三" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/lineBottom"
+            android:layout_alignStart="@id/lineAnchor"
+            android:layout_width="0.7dp"
+            android:layout_marginLeft="3.48dp"
+            android:layout_alignTop="@id/lineAnchor"
+            android:layout_alignBottom="@id/contentLayout"
+            android:layout_height="match_parent"
+            android:background="#FFA9A9A9" />
+
+        <ImageView
+            android:id="@+id/point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/lineAnchor"
+            android:layout_alignLeft="@id/lineAnchor"
+            android:src="@mipmap/reward_dynamic_point" />
+
+    </RelativeLayout>
+</layout>

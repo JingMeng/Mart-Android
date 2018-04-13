@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divide"
+    android:orientation="vertical"
+    tools:context="net.coding.mart.activity.mpay.pay.PayStageActivity">
+
+    <TextView
+        style="@style/YellowTipTitleTextView"
+        android:text="资金支付后才能启动本阶段" />
+
+    <View
+        style="@style/DivideSectionTop5"
+        android:layout_marginTop="10dp" />
+
+    <RelativeLayout style="@style/SettingListItem" android:padding="15dp">
+
+        <TextView
+            style="@style/SettingListItemText1"
+            android:text="交易号"
+            android:id="@+id/title"
+            android:textColor="#FF434A54" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/divide_1_12" />
+
+    <RelativeLayout style="@style/SettingListItem" android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                style="@style/SettingListItemText1"
+                android:text="本阶段金额"
+                android:textColor="#FF434A54" />
+
+            <TextView
+                android:id="@+id/payDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="余额不足"
+                android:textColor="@color/font_black_9"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/payMoney"
+            style="@style/SettingListItemText2ModifyPassword"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:background="@null"
+            android:gravity="right"
+            android:textColor="@color/money_color_yellow"
+            tools:text="¥15,000" />
+    </RelativeLayout>
+
+    <include layout="@layout/divide_15_top" />
+
+    <Button
+        android:id="@+id/sendButton"
+        style="@style/SendButton"
+        android:layout_marginTop="15dp"
+        android:text="去支付" />
+
+</LinearLayout>

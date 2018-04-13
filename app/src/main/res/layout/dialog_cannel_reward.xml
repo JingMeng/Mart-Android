@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/padding_15"
+        android:layout_marginRight="@dimen/padding_15">
+
+        <TextView
+            style="@style/DialogTitle"
+            android:text="选择以下理由" />
+
+        <ImageView
+            android:id="@+id/demo_closebtn"
+            style="@style/DialogCloseButton"
+            android:visibility="invisible" />
+
+        <View
+            style="@style/DialogTopDivideLine"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="@dimen/padding_15"
+        android:layout_marginRight="@dimen/padding_15"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text0"
+            style="@style/DialogMulPickTextView"
+            android:text="不想做了"
+            tools:drawableRight="@mipmap/ic_status_list_check" />
+
+        <TextView
+            android:id="@+id/text1"
+            style="@style/DialogMulPickTextView"
+            android:text="没找到合适开发者" />
+
+        <TextView
+            android:id="@+id/text2"
+            style="@style/DialogMulPickTextView"
+            android:text="预算不够" />
+
+        <TextView
+            android:id="@+id/text3"
+            style="@style/DialogMulPickTextView"
+            android:text="需求有较大变更，暂时不做" />
+
+        <TextView
+            android:id="@+id/text4"
+            style="@style/DialogMulPickTextView"
+            android:text="其它原因" />
+
+
+    </LinearLayout>
+
+    <View style="@style/DivideLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_botton_height"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/leftButton"
+            style="@style/DialogButton"
+            android:text="取消" />
+
+        <View style="@style/DivideLineVer" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/rightButton"
+            style="@style/DialogButton"
+            android:text="确定" />
+
+    </LinearLayout>
+
+</LinearLayout>

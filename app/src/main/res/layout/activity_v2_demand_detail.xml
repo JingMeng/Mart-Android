@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="CoderDemandBinding">
+
+        <import
+            alias="View"
+            type="android.view.View" />
+
+        <variable
+            name="data"
+            type="net.coding.mart.json.mart2.user.MartUser" />
+    </data>
+
+    <FrameLayout
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:background="@color/divide"
+        android:layout_height="match_parent">
+
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dp"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <ScrollView
+            android:id="@+id/rootScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:layout_marginBottom="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/font_blue"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingBottom="20dp">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/userIcon"
+                        android:layout_width="67dp"
+                        android:layout_height="67dp"
+                        android:layout_marginTop="21dp"
+                        app:civ_border_color="#4CFFFFFF"
+                        app:civ_border_width="3.5dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@{data.name}"
+                            android:textColor="#FFFFFFFF"
+                            android:textSize="16sp"
+                            tools:text="MangoLi" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <include layout="@layout/divide_10_top_bottom" />
+
+                <LinearLayout
+                    android:id="@+id/hasContactLayout"
+                    style="@style/SectionLayout">
+
+                    <TextView
+                        style="@style/SectionTitle"
+                        android:text="联系方式" />
+
+                    <View style="@style/DivideLine_15_left" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout style="@style/ItemLayoutTransparent">
+
+                            <TextView
+                                style="@style/ItemLeftText"
+                                android:text="电话" />
+
+                            <TextView
+                                style="@style/ItemRightText"
+                                android:text="@{data.phone}" />
+
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/ItemLayoutTransparent">
+
+                            <TextView
+                                style="@style/ItemLeftText"
+                                android:text="QQ" />
+
+                            <TextView
+                                style="@style/ItemRightText"
+                                android:text="@{data.qq}" />
+
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/ItemLayoutTransparent">
+
+                            <TextView
+                                style="@style/ItemLeftText"
+                                android:text="邮箱" />
+
+                            <TextView
+                                style="@style/ItemRightText"
+                                android:text="@{data.email}" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View style="@style/DivideSectionBottom5" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+</layout>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="info"
+            type="net.coding.mart.json.reward.Published" />
+    </data>
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/stand_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="项目描述"
+                android:layout_marginLeft="15dp"
+                android:textColor="#FF273444"
+                android:textSize="16sp" />
+
+            <View style="@style/DivideLine" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/stand_bg"
+            android:orientation="vertical"
+            android:paddingBottom="15sp"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:orientation="horizontal"
+                android:paddingTop="15dp">
+
+                <com.flyco.roundview.RoundTextView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/font_white"
+                    app:rv_backgroundColor="@color/font_blue"
+                    app:rv_isRadiusHalfHeight="true" />
+
+                <TextView
+                    style="@style/RewardDetailNumberText"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="基本情况" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                style="@style/V2RewardDetailDescriptionLayou">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/V2RewardDetailDescriptionItem1"
+                        android:text="编号" />
+
+                    <TextView
+                        style="@style/V2RewardDetailDescriptionItem2"
+                        android:text="@{info.idString}" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/V2RewardDetailDescriptionItem1"
+                        android:text="项目类型" />
+
+                    <TextView
+                        style="@style/V2RewardDetailDescriptionItem2"
+                        android:text="@{info.rewardTypeString}" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/V2RewardDetailDescriptionItem1"
+                        android:text="预算" />
+
+                    <TextView
+                        style="@style/V2RewardDetailDescriptionItem2"
+                        android:text="@{info.budgetString}" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/V2RewardDetailDescriptionItem1"
+                        android:text="需求状态" />
+
+                    <TextView
+                        style="@style/V2RewardDetailDescriptionItem2"
+                        android:text="" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/V2RewardDetailDescriptionItem1"
+                        android:layout_marginBottom="0dp"
+                        android:text="需求文档" />
+
+                    <TextView
+                        style="@style/V2RewardDetailDescriptionItem2"
+                        android:layout_marginBottom="0dp"
+                        android:text="" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:orientation="horizontal"
+                android:paddingTop="15dp">
+
+                <com.flyco.roundview.RoundTextView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/font_white"
+                    app:rv_backgroundColor="@color/font_blue"
+                    app:rv_isRadiusHalfHeight="true" />
+
+                <TextView
+                    style="@style/RewardDetailNumberText"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="项目细节" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                style="@style/V2RewardDetailDescriptionLayou">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/V2RewardDetailDescriptionItem1"
+                        android:text="描述" />
+
+                    <TextView
+                        style="@style/V2RewardDetailDescriptionItem2"
+                        android:text="@{info.description}" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/V2RewardDetailDescriptionItem1"
+                        android:text="项目周期" />
+
+                    <TextView
+                        style="@style/V2RewardDetailDescriptionItem2"
+                        android:text="@{info.durationString}" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/V2RewardDetailDescriptionItem1"
+                        android:layout_marginBottom="0dp"
+                        android:text="参考项目" />
+
+                    <TextView
+                        style="@style/V2RewardDetailDescriptionItem2"
+                        android:layout_marginBottom="0dp"
+                        android:text="@{info.sampleLinks}" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:orientation="horizontal"
+                android:paddingTop="15dp">
+
+                <com.flyco.roundview.RoundTextView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="@color/font_white"
+                    app:rv_backgroundColor="@color/font_blue"
+                    app:rv_isRadiusHalfHeight="true" />
+
+                <TextView
+                    style="@style/RewardDetailNumberText"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="联系信息" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                style="@style/V2RewardDetailDescriptionLayou">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/V2RewardDetailDescriptionItem1"
+                        android:text="姓名" />
+
+                    <TextView
+                        style="@style/V2RewardDetailDescriptionItem2"
+                        android:text="@{info.contactName}" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/V2RewardDetailDescriptionItem1"
+                        android:text="电话" />
+
+                    <TextView
+                        style="@style/V2RewardDetailDescriptionItem2"
+                        android:text="@{info.contactMobile}" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/V2RewardDetailDescriptionItem1"
+                        android:layout_marginBottom="0dp"
+                        android:text="联系邮箱" />
+
+                    <TextView
+                        style="@style/V2RewardDetailDescriptionItem2"
+                        android:layout_marginBottom="0dp"
+                        android:text="@{info.contactEmail}" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/divide_5_bottom" />
+
+    </LinearLayout>
+</layout>

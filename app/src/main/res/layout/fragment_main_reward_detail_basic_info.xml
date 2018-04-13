@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <!--<variable-->
+        <!--name="info"-->
+        <!--type="net.coding.mart.json.reward.BasicInfo" />-->
+        <variable
+            name="info"
+            type="net.coding.mart.json.BasicJobInfo" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/stand_bg"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding_15"
+            android:paddingLeft="@dimen/padding_15"
+            android:paddingTop="@dimen/padding_15">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="8dp"
+                    android:src="@mipmap/ic_high_pay"
+                    android:id="@+id/iconHighPay"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/padding_15"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="@{info.name}"
+                    android:textColor="@color/font_black_2"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:text="医疗采样流程管理及终端用户互动平台医疗采样流程管理及终端用户互动平台" />
+
+                <ImageView
+                    android:id="@+id/rewardProgress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/job_detail_progress_doing"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/reward_detail_basic_info_rect_gray"
+                    android:gravity="center"
+                    android:text='@{String.format("NO.%s", info.id)}'
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    tools:text="NO.25" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@{info.roles}"
+                    android:textColor="#808080"
+                    android:textSize="15sp"
+                    tools:text="前端开发, 设计师" />
+            </LinearLayout>
+
+            <View
+                style="@style/DivideLine_15_left"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="15dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/priceTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="金额："
+                    android:textColor="#808080"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/basicInfoMoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/priceTitle"
+                    android:text="@{info.formatPrice}"
+                    android:textColor="@color/font_black_2"
+                    android:textSize="15sp"
+                    tools:text="3000" />
+
+                <TextView
+                    android:id="@+id/basicInfoHighPay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/basicInfoMoney"
+                    android:text="直营"
+                    android:visibility="gone"
+                    android:textColor="@color/font_red"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/typeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/priceTitle"
+                    android:layout_marginTop="6dp"
+                    android:text="类型："
+                    android:textColor="#808080"
+
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/typeTitle"
+                    android:layout_toRightOf="@id/typeTitle"
+                    android:text="@{info.rewardTypeName}"
+                    android:textColor="@color/font_black_2"
+                    android:textSize="15sp"
+                    tools:text="300000" />
+
+                <TextView
+                    android:id="@+id/duringTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/typeTitle"
+                    android:layout_marginTop="6dp"
+                    android:text="周期："
+                    android:textColor="#808080"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/during"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/duringTitle"
+                    android:layout_toRightOf="@id/duringTitle"
+                    android:lines="1"
+                    android:text="@{info.durationString}"
+                    android:textColor="@color/font_black_2"
+                    android:textSize="15sp"
+                    tools:text="300000000" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/divide_5_bottom" />
+
+    </LinearLayout>
+</layout>

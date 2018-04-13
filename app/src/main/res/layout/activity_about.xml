@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:list1="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divide"
+    tools:context="net.coding.mart.setting.AboutActivity">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/icon_about" />
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="技术变现，让赚钱更简单"
+        android:textColor="@color/font_black_2"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="V 2.1"
+        android:textColor="@color/font_black_2"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/version"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/shadow_bottom" />
+
+        <net.coding.mart.common.widget.ListItem1
+            android:id="@+id/checkUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            list1:itemText="检查更新" />
+
+        <net.coding.mart.common.widget.ListItem1
+            android:id="@+id/recommendMart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            list1:itemText="推荐码市" />
+
+        <net.coding.mart.common.widget.ListItem1
+            android:id="@+id/marketMark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            list1:itemBottomLine="false"
+            list1:itemText="去评分" />
+
+        <include layout="@layout/shadow_top" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="0dp">
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系电话：400-992-1001"
+            android:textColor="@color/font_black_9"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="邮箱：support@codemart.com"
+            android:textColor="@color/font_black_9"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="地址：深圳"
+            android:textColor="@color/font_black_9"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

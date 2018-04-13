@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginTop="5dp"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content"
+    tools:showIn="@layout/fragment_reward_detail_description_custom">
+
+    <TextView
+        style="@style/RewardDetailDescriptionItem42"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="1"
+        android:id="@+id/roleName"
+        android:layout_marginLeft="0dp"
+        android:layout_width="0dp"
+        tools:text="iOS 开发工程师" />
+
+    <TextView
+        style="@style/RewardDetailDescriptionItem42"
+        android:layout_marginBottom="0dp"
+        android:textColor="@color/money_color_yellow"
+        android:id="@+id/rolePrice"
+        tools:text="iOS 开发工程师" />
+</LinearLayout>

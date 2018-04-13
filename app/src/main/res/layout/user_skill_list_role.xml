@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.coding.mart.common.widget.AlignCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    app:cardElevation="@dimen/card_z"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#f6f6f6"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/font_black_6"
+                android:textSize="16sp"
+                tools:text="开发工程师" />
+
+            <ImageView
+                android:id="@+id/modifyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:scaleType="center"
+                android:src="@mipmap/ic_role_modify" />
+        </LinearLayout>
+
+        <include layout="@layout/divide_1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="技能类型："
+                android:textColor="@color/font_black_9"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/skills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@color/font_black_6"
+                android:textSize="15sp"
+                tools:text="UI设计，需求分析" />
+        </LinearLayout>
+
+        <include layout="@layout/divide_1" />
+
+        <LinearLayout
+            android:id="@+id/goodAtLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="擅长技术："
+                    android:textColor="@color/font_black_9"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/goodAt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/font_black_6"
+                    android:textSize="15sp"
+                    tools:text="UI设计，需求分析" />
+            </LinearLayout>
+
+            <include layout="@layout/divide_1" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="特殊技能："
+                android:textColor="@color/font_black_9"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/abilities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@color/font_black_6"
+                android:textSize="15sp"
+                tools:text="UI设计，需求分析" />
+        </LinearLayout>
+
+    </LinearLayout>
+</net.coding.mart.common.widget.AlignCardView>

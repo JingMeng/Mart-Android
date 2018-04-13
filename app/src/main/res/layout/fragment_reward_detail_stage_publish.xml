@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="info"
+            type="net.coding.mart.json.reward.StagePay" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/divide">
+
+            <TextView
+                style="@style/RewardDetailSection"
+                android:text="资金状态" />
+
+
+            <TextView
+                style="@style/RewardDetailSection"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:drawableLeft="@mipmap/ic_account_tip"
+                android:drawablePadding="9dp"
+                android:text="码市提醒您"
+                android:visibility="gone"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:background="@color/stand_bg"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/PayStageTitle"
+                    android:text="已完成阶段" />
+
+                <TextView
+                    style="@style/PayStageContent1"
+                    android:text="已完成交易额" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="2dp">
+
+                    <TextView
+                        style="@style/PayStageContent2"
+                        android:text="@{info.getPayed()}"
+                        tools:text="17.000" />
+
+                    <include layout="@layout/text_yuan" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                style="@style/DivideLineVer"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/PayStageTitle"
+                    android:text="未完成阶段" />
+
+                <TextView
+                    style="@style/PayStageContent1"
+                    android:text="金额" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="2dp">
+
+                    <TextView
+                        style="@style/PayStageContent2"
+                        android:text="@{info.getDeveloping()}"
+                        tools:text="17.000" />
+
+                    <include layout="@layout/text_yuan" />
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/PayStageContent3"
+                    android:text="@{info.getTotalDevelopingCount()}" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/DivideLineVer"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/PayStageTitle"
+                    android:text="待支付阶段" />
+
+                <TextView
+                    style="@style/PayStageContent1"
+                    android:text="需支付" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="2dp">
+
+                    <TextView
+                        style="@style/PayStageContent2"
+                        android:text="@{info.getPending()}"
+                        tools:text="17.000" />
+
+                    <include layout="@layout/text_yuan" />
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/PayStageContent3"
+                    android:text="@{info.getPedingStageCount()}" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/divide_5_bottom" />
+    </LinearLayout>
+</layout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="@dimen/padding_15">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/DialogTitle"
+            android:text="@string/reward_tip_identity_weixin_pay_title" />
+
+        <ImageView
+            android:id="@+id/demo_closebtn"
+            style="@style/DialogCloseButton" />
+    </RelativeLayout>
+
+    <View style="@style/DialogTopDivideLine" />
+
+    <TextView
+        android:id="@+id/message"
+        style="@style/tip_dialog_item_content"
+        android:layout_marginTop="10dp"
+        android:text="您提交的身份验证信息如下"
+        android:textColor="@color/font_black_6"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/nameTitle"
+            android:layout_width="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/font_black_2"
+            android:layout_height="wrap_content"
+            android:text="真实姓名：" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_toEndOf="@id/nameTitle"
+            android:layout_width="wrap_content"
+            tools:text="张三"
+            android:textSize="14sp"
+            android:textColor="@color/font_blue"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/idCardTitle"
+            android:textSize="14sp"
+            android:textColor="@color/font_black_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameTitle"
+            android:layout_marginTop="5dp"
+            android:text="身份证号：" />
+
+        <TextView
+            android:id="@+id/idCard"
+            android:layout_toEndOf="@id/idCardTitle"
+            android:layout_width="wrap_content"
+            tools:text="1232312312321"
+            android:layout_alignTop="@id/idCardTitle"
+            android:textSize="14sp"
+            android:textColor="@color/font_blue"
+            android:layout_height="wrap_content" />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idCardTitle"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/font_black_9"
+                android:textSize="14sp"
+                android:text="温馨提示：\n1、认证失败费用不会退还，请确认身份信息。\n2、每个身份证号码只能绑定一个账户，一经绑定，无法修改"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="0dp"
+        android:text="支付认证费用"
+        android:layout_height="44dp"
+        android:layout_marginLeft="0dp"
+        android:textSize="17sp"
+        android:id="@+id/sendButton"
+        style="@style/SendButton" />
+
+</LinearLayout>

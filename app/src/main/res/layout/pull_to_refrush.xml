@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/divide"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/pullFixHeader"
+        android:layout_height="65dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="海量认证开发者，精简 IT 建设成本"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="@color/font_black_9"
+            android:id="@+id/refrushTitle"
+            android:layout_marginTop="40dp" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/loadingCircleLayout"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_pull_to_refrush_1"
+                android:id="@+id/refrushCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_pull_to_refrush_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="松开刷新"
+            android:id="@+id/refrushContent"
+            android:textSize="14sp"
+            android:textColor="#7A8188" />
+    </LinearLayout>
+</LinearLayout>

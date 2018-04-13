@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<item-->
+        <!--android:id="@+id/action_reward_edit"-->
+        <!--android:icon="@mipmap/ic_menu_reward_edit"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title="编辑项目"-->
+        <!--app:showAsAction="always" />-->
+
+    <item
+        android:id="@+id/action_reward_dynamic"
+        android:icon="@mipmap/ic_menu_reward_dynamic"
+        android:orderInCategory="100"
+        android:title="项目动态"
+        app:showAsAction="always" />
+
+    <!--<item-->
+        <!--android:id="@+id/action_reward_cancel"-->
+        <!--android:icon="@mipmap/ic_menu_reward_dynamic"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title="取消发布"-->
+        <!--app:showAsAction="never" />-->
+
+</menu>

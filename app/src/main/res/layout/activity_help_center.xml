@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divide"
+    android:orientation="vertical"
+    tools:context="net.coding.mart.setting.HelpCenterActivity">
+
+    <include layout="@layout/divide_15_bottom" />
+
+    <net.coding.mart.common.widget.ListItem1
+        android:id="@+id/faq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemText="常见问题" />
+
+    <net.coding.mart.common.widget.ListItem1
+        android:id="@+id/martIntroduce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemText="码市入门" />
+
+    <net.coding.mart.common.widget.ListItem1
+        android:id="@+id/employer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemText="我是需求方" />
+
+    <net.coding.mart.common.widget.ListItem1
+        android:id="@+id/developer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBottomLine="false"
+        app:itemText="我是开发者" />
+
+    <include layout="@layout/divide_10_top_bottom" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/feedback"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@drawable/list_item_selector">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/list_item_icon_right"
+            android:layout_toRightOf="@id/icon"
+            android:drawableLeft="@mipmap/ic_list_feedback"
+            android:drawablePadding="10dp"
+            android:text="意见反馈"
+            android:textColor="#222222"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/divide_10_bottom" />
+
+</LinearLayout>

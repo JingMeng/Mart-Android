@@ -1,0 +1,162 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="@color/divide"
+    tools:context="net.coding.mart.activity.setting.enterprise.EnterpriceIdentityResultFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/stand_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="20dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="25dp">
+
+            <View
+                android:id="@+id/icon"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:background="@mipmap/developer_pay_success" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/icon"
+                android:text="认证通过！"
+                android:textColor="@color/font_black_2"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tipContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/title"
+                android:layout_below="@id/title"
+                android:layout_marginTop="5dp"
+                android:lineSpacingExtra="2dp"
+                android:text="验证通过后无法自行修改。如果需要修改认证信息请 联系客服"
+                android:textColor="@color/font_black_9"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/divide_10_top_bottom" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/identityTip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@mipmap/ic_ia_demo"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:text="认证说明"
+                android:visibility="invisible"
+                android:textColor="@color/font_black_9"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/font_black_2"
+                    tools:drawableRight="@mipmap/ic_enterprise_flag_passed"
+                    android:gravity="center_vertical"
+                    android:textSize="17sp"
+                    tools:text="AllenTse" />
+
+                <TextView
+                    android:id="@+id/idCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="营业执照编号："
+                    android:textColor="@color/font_black_9"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="营业执照扫描件："
+                    android:textColor="@color/font_black_9"
+                    android:textSize="14sp" />
+
+
+                <RelativeLayout
+                    android:id="@+id/LayoutCardPositive"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/card_background"
+                    tools:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/card_postive" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:text="上传营业执照扫描件"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/businessLicence"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        app:riv_corner_radius="3dp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <include layout="@layout/divide_10_bottom" />
+
+        <TextView
+            style="@style/SendButton"
+            android:id="@+id/sendButton"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp"
+            android:text="重新提交申请" />
+
+    </LinearLayout>
+</ScrollView>

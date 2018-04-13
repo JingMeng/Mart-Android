@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/padding_15"
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp"
+    android:paddingRight="@dimen/padding_15">
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1.项目开发中需要使用代码托管，开发者应该怎么做？"
+        android:textColor="@color/font_black_0"
+        android:layout_marginBottom="5dp"
+        android:textSize="16sp" />
+
+    <include
+        android:id="@+id/itemA"
+        layout="@layout/exam_list_item_option" />
+
+    <include
+        android:id="@+id/itemB"
+        layout="@layout/exam_list_item_option" />
+
+    <include
+        android:id="@+id/itemC"
+        layout="@layout/exam_list_item_option" />
+
+    <include
+        android:id="@+id/itemD"
+        layout="@layout/exam_list_item_option" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/font_blue"
+        tools:text="正确答案：D" />
+
+</LinearLayout>

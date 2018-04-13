@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <data>
+
+        <variable
+            name="info"
+            type="net.coding.mart.json.reward.Published" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/divide">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="@dimen/padding_15"
+                android:layout_marginTop="10dp"
+                android:text="项目描述"
+                android:textColor="@color/font_black_9"
+                android:textSize="15sp" />
+
+            <!--<View-->
+            <!--style="@style/DivideSectionBottom5" />-->
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/stand_bg"
+            android:orientation="vertical"
+            android:paddingBottom="15sp"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp">
+
+            <TextView
+                style="@style/RewardDetailDescriptionTitle"
+                android:text="项目描述" />
+
+            <LinearLayout
+
+                style="@style/RewardDetailDescriptionLayou">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/RewardDetailDescriptionItem2"
+                        android:layout_marginBottom="0dp"
+                        android:text="@{info.description}"
+                        tools:text="码市客户端的自助评估系统开发。该系统可根据用户选择的相关平台与功能模块，合理评估出项目价格与周期。" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                tools:visibility="gone"
+                android:id="@+id/linkTitle"
+                style="@style/RewardDetailDescriptionTitle"
+                android:text="参考网站或产品" />
+
+            <LinearLayout
+                android:id="@+id/linkContent"
+                tools:visibility="gone"
+                style="@style/RewardDetailDescriptionLayou">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/RewardDetailDescriptionItem2"
+                        android:layout_marginBottom="0dp"
+                        android:text="@{info.sampleLinks}"
+                        tools:text="1. https://codemart.com\n1. " />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/RewardDetailDescriptionTitle"
+                android:text="项目规划" />
+
+            <LinearLayout style="@style/RewardDetailDescriptionLayou">
+
+                <TextView
+                    style="@style/RewardDetailDescriptionItem41"
+                    android:id="@+id/developerPlanTitle"
+                    android:text="开发计划" />
+
+                <TextView
+                    style="@style/RewardDetailDescriptionItem42"
+                    android:id="@+id/developerPlanContent"
+                    android:text="@{info.developPlan}"
+                    tools:text="项目动态：设计展示页面，需要增加项目动态筛选 Tab 栏和项目动态列表。全部任务：全部任务列表，可点击弹出项目成员列表，点击项目成员可查看某一成员的任务列表。我的任务：点击自己，可以查看自己的任务列表。" />
+
+                <TextView
+                    style="@style/RewardDetailDescriptionItem41"
+                    android:text="项目周期" />
+
+                <TextView
+                    style="@style/RewardDetailDescriptionItem42"
+                    android:text="@{info.durationString}"
+                    tools:text="11 天" />
+
+                <TextView
+                    style="@style/RewardDetailDescriptionItem41"
+                    android:text="质保期" />
+
+                <TextView
+                    style="@style/RewardDetailDescriptionItem42"
+                    android:layout_marginBottom="0dp"
+                    android:text="@{info.warrantyString}"
+                    tools:text="60 天" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/RewardDetailDescriptionTitle"
+                android:text="招募角色" />
+
+            <LinearLayout
+                style="@style/RewardDetailDescriptionLayou">
+
+                <TextView
+                    style="@style/RewardDetailDescriptionItem41"
+                    android:layout_marginBottom="0dp"
+                    android:text="项目角色和金额：" />
+
+                <LinearLayout
+                    style="@style/RewardDetailDescriptionItem42"
+                    android:layout_width="match_parent"
+                    android:id="@+id/roleLayout"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/RewardDetailDescriptionItem41"
+                    android:text="项目要求" />
+
+                <TextView
+                    style="@style/RewardDetailDescriptionItem42"
+                    android:layout_marginBottom="0dp"
+                    android:text="@{info.rewardDemand}"
+                    tools:text="需要深圳本地开发者，可以面对面交流；保证充足的开发时间，按期上线。 " />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/RewardDetailDescriptionTitle"
+                android:text="联系信息" />
+
+            <LinearLayout style="@style/RewardDetailDescriptionLayou">
+
+                <TextView
+                    style="@style/RewardDetailDescriptionItem41"
+                    android:text="姓名" />
+
+                <TextView
+                    style="@style/RewardDetailDescriptionItem42"
+                    android:text="@{info.contact_name}"
+                    tools:text="长分割" />
+
+                <TextView
+                    style="@style/RewardDetailDescriptionItem41"
+                    android:text="电话" />
+
+                <TextView
+                    style="@style/RewardDetailDescriptionItem42"
+                    android:layout_marginBottom="0dp"
+                    android:text="@{info.fullPhone}"
+                    tools:text="13512341234" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/divide_5_bottom" />
+
+    </LinearLayout>
+</layout>

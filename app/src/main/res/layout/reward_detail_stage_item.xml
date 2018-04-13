@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <data>
+
+        <variable
+            name="stage"
+            type="net.coding.mart.json.reward.Stage" />
+
+        <variable
+            name="stageUtil"
+            type="net.coding.mart.activity.reward.detail.RewardDetailUtil" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@{stageUtil.finish ? @drawable/rect_blue_light : @drawable/rect_stage_top_blue }"
+            android:gravity="center_vertical"
+            tools:background="@drawable/rect_blue"
+            android:onClick="@{stageUtil::onClickToggle}">
+
+            <TextView
+                tools:text="阶段:s1"
+                tools:textColor="#222222"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/padding_15"
+                android:text='@{stage.stageNo}'
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/expandIndicate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="12dp"
+                android:src="@mipmap/stage_expand_indicate_up" />
+
+        </FrameLayout>
+
+        <com.github.aakira.expandablelayout.ExpandableLinearLayout
+            android:id="@+id/expandLayout"
+            style="@style/RewardDetailDescriptionLayou"
+            android:background="@drawable/reward_detail_stage_item_expand"
+            app:ael_duration="200"
+            app:ael_expanded="true"
+            app:ael_orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/RewardDetailDescriptionItem1"
+                    android:text="阶段名称：" />
+
+                <TextView
+                    style="@style/RewardDetailDescriptionItem3"
+                    android:text="@{stage.stageTask}" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/RewardDetailDescriptionItem1"
+                    android:text="交付文档：" />
+
+                <TextView
+                    style="@style/RewardDetailDescriptionItem3"
+                    android:text="@{stage.stageFileDesc}" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/RewardDetailDescriptionItem1"
+                    android:text="计划起止日期：" />
+
+                <TextView
+                    style="@style/RewardDetailDescriptionItem3"
+                    android:text="@{stage.planTimeRange}" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/RewardDetailDescriptionItem1"
+                    android:text="计划天数（自然日）：" />
+
+                <TextView
+                    style="@style/RewardDetailDescriptionItem3"
+                    android:text="@{stage.planDays}" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/RewardDetailDescriptionItem1"
+                    android:text="实际起止日期：" />
+
+                <TextView
+                    style="@style/RewardDetailDescriptionItem3"
+                    android:text="@{stage.factTimeRange}" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="@{stageUtil.moneyVisable}">
+
+                <TextView
+                    style="@style/RewardDetailDescriptionItem1"
+                    android:text="金额：" />
+
+                <TextView
+                    style="@style/RewardDetailDescriptionItem3"
+                    android:text='@{stage.formatPrice}' />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/RewardDetailDescriptionItem1"
+                    android:text="资金状态：" />
+
+                <TextView
+                    style="@style/RewardDetailDescriptionItem3"
+                    android:text='@{stage.payedText}' />
+            </LinearLayout>
+
+            <View style="@style/DivideLine" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:minHeight="30dp">
+
+                <TextView
+                    android:id="@+id/checkStyle"
+                    tools:text="待验收"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text='@{stage.statusText}'
+                    android:textColor="@{stage.statusColor}"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/timeTip"
+                    tools:text="还剩1天10小时"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/checkStyle"
+                    android:background="@drawable/reward_detail_stage_tip"
+                    android:gravity="center"
+                    android:text="@{stageUtil.timeTipString}"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:visibility="@{stageUtil.timeTipVisable}" />
+
+                <TextView
+                    tools:text="查看未通过原因"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/rect_blue_line"
+                    android:gravity="center"
+                    android:minWidth="85dp"
+                    android:onClick="@{stageUtil::onClickButton1}"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text='@{stageUtil.buton1String}'
+                    android:textColor="@color/font_blue"
+                    android:textSize="12sp"
+                    android:visibility="@{stageUtil.button1Visable}" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="@{stageUtil.button2LayoutVisable}">
+
+                <View
+                    style="@style/DivideLine"
+                    android:layout_marginTop="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rect_blue_line"
+                    android:gravity="center"
+                    android:onClick="@{stageUtil::onClickButton2}"
+                    android:text='@{stageUtil.button2String}'
+                    android:textColor="@color/font_blue" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="@{stageUtil.button3LayoutVisable}">
+
+                <View
+                    style="@style/DivideLine"
+                    android:layout_marginTop="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="36dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rect_blue_line"
+                        android:gravity="center"
+                        android:onClick="@{stageUtil::onClickCheckSuccess}"
+                        android:text='确认验收'
+                        android:textColor="@color/font_blue" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rect_red_line"
+                        android:gravity="center"
+                        android:onClick="@{stageUtil::onClickCheckFail}"
+                        android:text='验收不通过'
+                        android:textColor="@color/font_red" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+    </LinearLayout>
+
+</layout>

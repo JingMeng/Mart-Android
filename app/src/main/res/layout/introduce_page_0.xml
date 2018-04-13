@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="22dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="22dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/introduce_page_0_content0"
+            android:textColor="@color/font_black_6"
+            android:textSize="15sp"
+            android:textAlignment="textStart" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/divide_line" />
+
+        <TextView
+            style="@style/IntroduceSectionTitle"
+            android:text="服务范围"
+            android:layout_marginTop="30dp" />
+
+        <LinearLayout
+            style="@style/IntroduceImageBase"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/IntroduceImageBase"
+                android:src="@mipmap/ic_introduce_page0_icon0" />
+
+            <LinearLayout
+                style="@style/IntroduceImageBase"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/IntroduceItemTitle"
+                    android:text="需求梳理&amp;原型" />
+
+                <TextView
+                    style="@style/IntroduceItemContent1"
+                    android:layout_marginTop="3dp"
+                    android:text="专业产品经理帮助您梳理项目需求，编写需求文档并制作产品原型。" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/IntroduceImageBase"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/IntroduceImageBase"
+                android:src="@mipmap/ic_introduce_page0_icon1" />
+
+            <LinearLayout
+                style="@style/IntroduceImageBase"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/IntroduceItemTitle"
+                    android:text="UI设计" />
+
+                <TextView
+                    style="@style/IntroduceItemContent1"
+                    android:layout_marginTop="3dp"
+                    android:text="不同风格，不同专长的UI设计师为您设计产品界面，多套风格供您选择。" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/IntroduceImageBase"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/IntroduceImageBase"
+                android:src="@mipmap/ic_introduce_page0_icon2" />
+
+            <LinearLayout
+                style="@style/IntroduceImageBase"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/IntroduceItemTitle"
+                    android:text="程序开发" />
+
+                <TextView
+                    style="@style/IntroduceItemContent1"
+                    android:layout_marginTop="3dp"
+                    android:text="专业认证的开发者为您提供各种平台开发服务，专业项目顾问管控研发流程，保障交付。" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/IntroduceImageBase"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/IntroduceImageBase"
+                android:src="@mipmap/ic_introduce_page0_icon3" />
+
+            <LinearLayout
+                style="@style/IntroduceImageBase"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/IntroduceItemTitle"
+                    android:text="产品测试" />
+
+                <TextView
+                    style="@style/IntroduceItemContent1"
+                    android:layout_marginTop="3dp"
+                    android:text="专业测试工具，专属测试经理以及众包测试服务，给您的项目全面体检并出具专业报告。" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

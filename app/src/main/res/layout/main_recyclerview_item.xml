@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FAFAFA"
+    android:orientation="vertical"
+    android:paddingBottom="14dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="14dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/icon"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="2dp" />
+
+    <TextView
+        android:id="@+id/id"
+        tools:text="NO.25"
+        style="@style/rewardListId" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/icon"
+        android:layout_toRightOf="@id/icon"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:src="@mipmap/ic_high_pay"
+            android:layout_width="wrap_content"
+            android:id="@+id/iconHighPay"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/font_black_2"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:text="公司电商网站开发公司电商网站开发公司电商网站开发公司电商网站开发" />
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/reward_progress_rect"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="10sp"
+            tools:text="招募中" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/icon"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/job_type_0"
+            android:drawablePadding="5dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/font_black_2"
+            android:textSize="14sp"
+            tools:text="网站" />
+
+        <TextView
+            android:id="@+id/roly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/font_black_6"
+            android:textSize="14sp"
+            tools:text="前端开发,设计师,产品经理,后端开发" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignBottom="@id/icon"
+        android:layout_toRightOf="@id/icon"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/money_color_yellow"
+            android:textSize="18sp"
+            tools:text="$ 3.000" />
+
+        <TextView
+            android:id="@+id/highPayText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:visibility="visible"
+            tools:visibility="visible"
+            android:textColor="@color/font_red"
+            android:text="直营" />
+
+        <TextView
+            android:id="@+id/signUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/font_black_9"
+            tools:text="5人报名" />
+    </LinearLayout>
+</RelativeLayout>

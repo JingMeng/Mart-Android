@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/rootView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/divide"
+            tools:context="net.coding.mart.activity.mpay.MPayRechargeActivity">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="7dp"
+                android:paddingLeft="@dimen/padding_15"
+                android:paddingTop="10dp"
+                android:text="支付方式"
+                android:textColor="#FF696969"
+                android:textSize="13.5sp"/>
+
+        <net.coding.mart.common.widget.ListItem2
+                android:id="@+id/zhifubaoPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:itemCheck="true"
+                app:itemIcon="@mipmap/ic_pay_zhifubao"
+                app:itemNoPressState="true"
+                app:itemBottomLine="true"
+                app:itemText="支付宝"/>
+
+        <net.coding.mart.common.widget.ListItem2
+                android:id="@+id/weixinPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:itemCheck="true"
+                app:itemIcon="@mipmap/ic_pay_weixin"
+                app:itemNoPressState="true"
+                app:itemBottomLine="false"
+                app:itemText="微信支付"/>
+
+        <LinearLayout
+                android:id="@+id/paymentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <include layout="@layout/divide_15_top_bottom"/>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                          xmlns:tools="http://schemas.android.com/tools"
+                          android:layout_width="match_parent"
+                          android:layout_height="54dp"
+                          android:background="@drawable/list_item_selector"
+                          android:gravity="center_vertical">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/list_item_icon_left"
+                        android:layout_marginRight="@dimen/list_item_icon_right"
+                        android:text="充值金额"
+                        android:textColor="#FF000000"
+                        android:textSize="16sp"/>
+
+                <EditText
+                        android:id="@+id/paymentAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/icon"
+                        android:background="@null"
+                        android:hint="1 ~ 100,000"
+                        android:inputType="numberDecimal"
+                        android:textColor="#222222"
+                        android:textSize="16sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/divide_10_bottom"/>
+
+        <!--<TextView-->
+        <!--android:id="@+id/paymentTip"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="@dimen/padding_15"-->
+        <!--android:layout_marginRight="@dimen/padding_15"-->
+        <!--android:text="支持多次付款，本次付款金额不能少于 ￥5,000"-->
+        <!--android:textColor="#FFB0B0B3"-->
+        <!--android:textSize="14sp" />-->
+
+        <Button
+                android:id="@+id/nextButton"
+                style="@style/SendButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:enabled="true"
+                android:text="去支付"/>
+    </LinearLayout>
+
+</ScrollView>

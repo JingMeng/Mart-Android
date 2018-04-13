@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="CoderDetailProjectBinding">
+
+        <import
+            alias="View"
+            type="android.view.View" />
+
+        <variable
+            name="data"
+            type="net.coding.mart.json.reward.user.Project" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="【项目名称】"
+                android:textColor="#FF273444"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="@{data.detailTitle}"
+                android:textColor="#FF1F2D3D"
+                android:textSize="14sp"
+                tools:text="Coding APP 产品设计项目" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFF9FAFC"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <LinearLayout style="@style/ItemLayoutTransparent">
+
+                <TextView
+                    style="@style/ItemLeftText.InGray"
+                    android:text="项目周期" />
+
+                <TextView
+                    style="@style/ItemRightText.InGray"
+                    android:text="@{data.projectTimeRange}"
+                    tools:text="7天" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/ItemLayoutTransparent">
+
+                <TextView
+                    style="@style/ItemLeftText.InGray"
+                    android:text="项目行业" />
+
+                <TextView
+                    style="@style/ItemRightText.InGray"
+                    android:text="@{data.industryName}" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/ItemLayoutTransparent">
+
+                <TextView
+                    style="@style/ItemLeftText.InGray"
+                    android:text="展示链接" />
+
+                <TextView
+                    style="@style/ItemRightText.InGray"
+                    android:text="@{data.showUrl}" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ItemLayoutTransparent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp">
+
+                <TextView
+                    style="@style/ItemLeftText.InGray"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="项目文件" />
+
+                <LinearLayout
+                    android:id="@+id/filesLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:orientation="vertical"
+                    android:paddingTop="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ItemLayoutV"
+                android:background="@color/transparent">
+
+                <TextView
+                    style="@style/ItemLeftText.InGray"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="我的职责" />
+
+                <TextView
+                    style="@style/ItemRightTextBottomMul"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:text="@{data.duty}"
+                    tools:text="aaa" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ItemLayoutV"
+                android:background="@color/transparent">
+
+                <TextView
+                    style="@style/ItemLeftText.InGray"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="项目描述" />
+
+                <TextView
+                    style="@style/ItemRightTextBottomMul"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:text="@{data.description}" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

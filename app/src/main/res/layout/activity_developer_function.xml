@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:descendantFocusability="blocksDescendants">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp1080_45"
+                    android:layout_marginTop="@dimen/dp1080_45"
+                    android:text="码市预估报价："
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp1080_45" />
+
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp1080_45"
+                    android:layout_marginTop="@dimen/dp1080_36"
+                    android:text="¥ 4,800 - 6,600  元"
+                    android:textColor="#F5A623"
+                    android:textSize="@dimen/sp1080_72" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp1080_45"
+                    android:layout_marginTop="@dimen/dp1080_15"
+                    android:text="预计开发周期：4 - 5 个工作日"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/sp1080_45" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dip"
+                    android:layout_marginTop="@dimen/dp1080_45"></View>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_proj_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp1080_45"
+                    android:layout_marginTop="@dimen/dp1080_45"
+                    android:text="项目信息"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/sp1080_36" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp1080_30"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp1080_135"
+                        android:layout_marginLeft="@dimen/dp1080_45"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="项目名称："
+                            android:textColor="#999999"
+                            android:textSize="@dimen/sp1080_45" />
+
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp1080_45"
+                            android:text=""
+                            android:textColor="#666666"
+                            android:textSize="@dimen/sp1080_45" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dip"
+                        android:layout_marginLeft="@dimen/dp1080_45"
+                        android:background="#dddddd"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp1080_45"
+                        android:layout_marginRight="@dimen/dp1080_45"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp1080_36"
+                            android:text="项目描述："
+                            android:textColor="#999999"
+                            android:textSize="@dimen/sp1080_45" />
+
+
+                        <TextView
+                            android:id="@+id/tv_desc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp1080_45"
+                            android:layout_marginTop="@dimen/dp1080_36"
+                            android:lineSpacingMultiplier="1.2"
+                            android:text="根据提供的电影主题，完成APP的原型设计、UI及开发。健身相关功能可以参照KEEP, FITTIME，视频播放功能可以理解为优酷的简易版，播放内容只能运营方维护，用户不能自己上传。"
+                            android:textColor="#666666"
+                            android:textSize="@dimen/sp1080_45" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dip"
+                        android:layout_marginTop="@dimen/dp1080_36"></View>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="@dimen/dp1080_45"-->
+                <!--android:layout_marginTop="@dimen/dp1080_45"-->
+                <!--android:text="功能清单"-->
+                <!--android:textColor="#999999"-->
+                <!--android:textSize="@dimen/sp1080_36" />-->
+
+            <WebView
+                android:id="@+id/webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </WebView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

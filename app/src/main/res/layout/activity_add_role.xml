@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divide"
+    tools:context="net.coding.mart.activity.user.AddRoleActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/stand_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_15">
+
+
+            <TextView
+                style="@style/EditTextTitle"
+                android:paddingTop="0dp"
+                android:text="技能类型 *" />
+
+
+            <TextView
+                android:id="@+id/skills"
+                style="@style/SingleCheckTextView"
+                tools:text="Android开发" />
+
+            <LinearLayout
+                android:id="@+id/abilitiesLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/EditTextTitle"
+                    android:text="擅长技术 *" />
+
+                <TextView
+                    android:id="@+id/goodAt"
+                    style="@style/SingleCheckTextView"
+                    tools:text="c++" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/EditTextTitle"
+                android:layout_marginTop="@dimen/padding_15"
+                android:text="特殊技能" />
+
+            <EditText
+                android:id="@+id/abilities"
+                style="@style/SingleLineEditText"
+                android:hint="用逗号隔开" />
+
+            <include layout="@layout/divide_1" />
+
+
+        </LinearLayout>
+
+        <include layout="@layout/divide_10_top_bottom" />
+
+        <Button
+            android:id="@+id/sendButton"
+            style="@style/SendButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:text="保存" />
+
+
+    </LinearLayout>
+</ScrollView>
+

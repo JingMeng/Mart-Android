@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/divide_5_top" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/stand_bg">
+
+        <TextView
+            android:id="@+id/codersSection"
+            style="@style/RewardDetailSection"
+            android:text="阶段划分" />
+
+        <View
+            style="@style/DivideLine"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/phaseLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/stand_bg"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="#FFF9FAFC">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/phaseEmpty"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="恭喜，你已经成为本项目的开发者。请你与需求方沟通具体要求，并尽快建立阶段划分。"
+                android:textColor="#FF273444"
+                android:textSize="13sp" />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="44dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/actionToWeb"
+            android:gravity="center"
+            android:text="请前往 Web 端进行阶段划分操作"
+            android:textColor="#FFCAD3DE"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+    <include layout="@layout/divide_5_bottom" />
+
+</LinearLayout>

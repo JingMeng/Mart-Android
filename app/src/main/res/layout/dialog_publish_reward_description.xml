@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_15">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="项目描述范例"
+            android:textColor="@color/font_black_2"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View style="@style/DialogTopDivideLine" />
+
+    <TextView
+        style="@style/tip_dialog_item_title"
+        android:text="简介" />
+
+    <TextView
+        style="@style/tip_dialog_item_content"
+        android:text="本项目是理财产品的手机 APP 开发，旨在为⽤户提供便利的⼿机端理财产品； 产品主要功能为购买、交易理财产品。" />
+
+    <TextView
+        style="@style/tip_dialog_item_title"
+        android:text="功能需求" />
+
+    <TextView
+        style="@style/tip_dialog_item_content"
+        android:text="适配 iPhone 4s 及以上 iPhone 设备， iOS7.0 及以上版本。功能包含： 启动引导页、账户功能、交易功能、收益计算器、银行卡绑定、消息通知与推送。" />
+
+    <TextView
+        style="@style/tip_dialog_item_title"
+        android:text="APP 架构" />
+
+    <TextView
+        style="@style/tip_dialog_item_content"
+        android:text="APP 主要有“热门推荐”、“理财超市”、“我的资产”、“更多”等页面：\n[热门推荐] - 包含消息中心、轮播广告位、产品推荐等功能；\n[理财超市] - 包含由分段控制切换的三个页面，三个页面为三种不同类型产品的列表， 点击进入产品详情页；\n[我的资产] - 包含收益展示、图标展示资产明细、交易记录、银行卡管理、取现等功能。" />
+</LinearLayout>

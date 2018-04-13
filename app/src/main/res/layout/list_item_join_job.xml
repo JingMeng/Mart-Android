@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:background="#FFFFFFFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/type"
+            style="@style/JoinItemContent"
+            android:layout_marginLeft="12dp"
+            android:drawableLeft="@mipmap/job_type_0"
+            android:drawablePadding="4dp"
+            android:textColor="@color/font_black_6"
+            tools:text="网站" />
+
+        <TextView
+            android:id="@+id/jobId"
+            style="@style/JoinItemContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textColor="@color/font_black_9"
+            tools:text="No.129" />
+
+        <TextView
+            android:id="@+id/progress"
+            style="@style/JoinItemContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/padding_12"
+            android:textSize="12sp"
+            tools:text="已拒绝" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="86.7dp"
+        android:background="#FFF8F8F8"
+        android:paddingLeft="@dimen/padding_12"
+        android:paddingRight="@dimen/padding_12">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/icon"
+            android:layout_width="66.7dp"
+            android:layout_height="66.7dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_default_image"
+            app:riv_corner_radius="2dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/icon"
+            android:layout_toRightOf="@+id/icon"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/title"
+                    style="@style/JoinItemTitle"
+                    android:layout_width="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textSize="16sp"
+                    tools:text="公司网站开发" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/jobProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/reward_progress_rect"
+                android:textSize="10sp"
+                tools:text="招募中" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/skillRequest"
+            style="@style/JoinItemContent"
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/list_item_padding_w"
+            android:layout_toRightOf="@id/icon"
+            android:gravity="left"
+            android:singleLine="true"
+            android:textColor="@color/font_black_9"
+            tools:text="后端开发，设计师," />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/icon"
+            android:layout_toRightOf="@id/icon"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/price"
+                style="@style/JoinItemContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/money_color_yellow"
+                android:textStyle="bold"
+                tools:text="4000,00" />
+
+            <TextView
+                android:id="@+id/applyCount"
+                style="@style/JoinItemContent"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="left"
+                android:singleLine="true"
+                android:textColor="@color/font_black_8"
+                tools:text="5 人报名" />
+
+            <TextView
+                android:id="@+id/time"
+                style="@style/JoinItemContent"
+                android:layout_alignBottom="@+id/price"
+                android:layout_centerHorizontal="true"
+                android:text="周期: 30 天"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/white"
+        android:gravity="center|right"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/padding_12">
+
+        <TextView
+            android:id="@+id/buttonCannel"
+            style="@style/JoinJobEditButton"
+            android:layout_width="75dp"
+            android:text="取消参与"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/buttonOk"
+            style="@style/JoinJobEditButton"
+            android:layout_width="75dp"
+            android:layout_marginLeft="10dp"
+            tools:enable="false"
+            tools:text="重新报名"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/buttonJump"
+            style="@style/JoinJobEditButton"
+            android:layout_width="75dp"
+            android:layout_marginLeft="10dp"
+            tools:text="编辑申请"
+            tools:visibility="visible" />
+
+
+        <TextView
+            android:id="@+id/buttonReward"
+            style="@style/JoinJobEditButton"
+            android:layout_width="100dp"
+            android:layout_marginLeft="10dp"
+            android:text="查看项目状态"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+
+</LinearLayout>

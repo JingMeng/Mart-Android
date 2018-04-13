@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="data"
+            type="net.coding.mart.json.v2.phase.Evaluation" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rootLayout"
+        android:background="@color/divide"
+        android:orientation="vertical">
+
+        <include layout="@layout/divide_10_top" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/stand_bg"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/CoderJudgeTitleLayout">
+
+                <TextView
+                    android:text="技术水平和交付能力"
+                    style="@style/CoderJudgeTitle" />
+
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <com.willy.ratingbar.BaseRatingBar
+                    android:id="@+id/starsDeliverability"
+                    android:layout_width="80dp"
+                    android:layout_height="17dp"
+                    app:drawableEmpty="@mipmap/star_small_grey"
+                    app:drawableFilled="@mipmap/star_small_yellow"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView5"
+                    app:layout_constraintLeft_toRightOf="@+id/textView5"
+                    app:layout_constraintTop_toTopOf="@+id/textView5"
+                    app:numStars="5"
+                    app:rating="3"
+                    app:starHeight="16dp"
+                    app:starPadding="1.8dp"
+                    app:starWidth="16dp"
+                    app:touchable="false" />
+
+                <TextView
+                    android:text="@{data.deliverabilityRateString}"
+                    style="@style/CoderJudgeScore" />
+
+            </LinearLayout>
+
+            <TextView
+                android:text="技术能力良好，能够满足项目要求，在需求的跟进和督促下能够在各阶段按时交付，质量达到功能要求。"
+                style="@style/CoderJudgeMessage" />
+
+            <View style="@style/DivideLine_15_left" />
+
+
+            <LinearLayout style="@style/CoderJudgeTitleLayout">
+
+                <TextView
+                    android:text="沟通协作能力"
+                    style="@style/CoderJudgeTitle" />
+
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <com.willy.ratingbar.BaseRatingBar
+                    android:id="@+id/starsCommunication"
+                    android:layout_width="80dp"
+                    android:layout_height="17dp"
+                    app:drawableEmpty="@mipmap/star_small_grey"
+                    app:drawableFilled="@mipmap/star_small_yellow"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView5"
+                    app:layout_constraintLeft_toRightOf="@+id/textView5"
+                    app:layout_constraintTop_toTopOf="@+id/textView5"
+                    app:numStars="5"
+                    app:rating="3"
+                    app:starHeight="16dp"
+                    app:starPadding="1.8dp"
+                    app:starWidth="16dp"
+                    app:touchable="false" />
+
+                <TextView
+                    android:text="@{data.communicationRateString}"
+                    style="@style/CoderJudgeScore" />
+
+            </LinearLayout>
+
+            <TextView
+                android:text="出色的沟通能力，能主导与客户方的协作并主动推进项目，表达个人观点合理到位，在遇到研发过程中的矛盾甚至纠纷时能积极主动协调并较好地化解。"
+                style="@style/CoderJudgeMessage" />
+
+            <View style="@style/DivideLine_15_left" />
+
+            <LinearLayout style="@style/CoderJudgeTitleLayout">
+
+                <TextView
+                    android:text="工作态度和责任感"
+                    style="@style/CoderJudgeTitle" />
+
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <com.willy.ratingbar.BaseRatingBar
+                    android:id="@+id/starsResponsibility"
+                    android:layout_width="80dp"
+                    android:layout_height="17dp"
+                    app:drawableEmpty="@mipmap/star_small_grey"
+                    app:drawableFilled="@mipmap/star_small_yellow"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView5"
+                    app:layout_constraintLeft_toRightOf="@+id/textView5"
+                    app:layout_constraintTop_toTopOf="@+id/textView5"
+                    app:numStars="5"
+                    app:rating="3"
+                    app:starHeight="16dp"
+                    app:starPadding="1.8dp"
+                    app:starWidth="16dp"
+                    app:touchable="false" />
+
+                <TextView
+                    android:text="@{data.responsibilityRateString}"
+                    style="@style/CoderJudgeScore" />
+
+            </LinearLayout>
+
+            <TextView
+                android:text="诚实守信，实际能力与个人申请的描述相符，能承受较强的工作压力，对于潜在可能发生的问题能够较早提出并寻求解决方案，不回避问题，对承诺的事情能够积极兑现，出色完全预期目标。"
+                style="@style/CoderJudgeMessage" />
+
+            <View style="@style/DivideLine_15_left" />
+
+            <LinearLayout style="@style/CoderJudgeTitleLayout">
+
+                <TextView
+                    android:text="评价"
+                    style="@style/CoderJudgeTitle" />
+
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:text="@{data.contentString}"
+                style="@style/CoderJudgeMessage" />
+
+
+        </LinearLayout>
+
+        <include layout="@layout/divide_5_bottom" />
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_notify"
+        android:icon="@mipmap/ic_notify_button"
+        android:orderInCategory="100"
+        android:title="通知"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_help"
+        android:orderInCategory="100"
+        android:title="帮助与反馈"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="100"
+        android:title="关于码市"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_setting"
+        android:orderInCategory="100"
+        android:title="设置"
+        app:showAsAction="never" />
+</menu>

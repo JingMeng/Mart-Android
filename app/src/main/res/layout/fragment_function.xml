@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_main"
+            android:layout_width="@dimen/category_list_width"
+            android:layout_height="match_parent"
+            android:background="#FF8796A8">
+
+            <ListView
+                android:id="@+id/listview_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:dividerHeight="0dip"
+                android:listSelector="@null"
+                android:scrollbars="none" />
+
+            <View
+                android:id="@+id/view_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_child"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/category_list_width">
+
+            <net.coding.mart.developers.view.PinnedSectionListView
+                android:id="@+id/listview_child"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#EAECEE"
+                android:divider="@null"
+                android:dividerHeight="0dip"
+                android:listSelector="@null"
+                android:scrollbars="none" />
+
+            <View
+                android:id="@+id/view_child"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_third_category"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="0dp"
+            android:background="@color/white">
+
+            <net.coding.mart.developers.view.PinnedSectionListView
+                android:id="@+id/list_view_third"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:dividerHeight="0dip"
+                android:listSelector="@null"
+                android:scrollbars="none" />
+
+            <View
+                android:id="@+id/view_third"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

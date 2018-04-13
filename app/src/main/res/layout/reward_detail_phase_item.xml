@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="net.coding.mart.json.v2.phase.Phase" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rootLayout"
+        android:layout_height="112dp">
+
+        <com.flyco.roundview.RoundTextView
+            android:layout_width="28dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="17dp"
+            android:gravity="center"
+            android:text="@{data.phaseNo}"
+            android:textColor="#FF8796A8"
+            android:textSize="11sp"
+            app:rv_cornerRadius="2dp"
+            app:rv_backgroundColor="#FFE0E6ED"
+            tools:text="P1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:lines="1"
+            android:text="@{data.name}"
+            android:textColor="#FF273444"
+            android:textSize="16sp"
+            tools:text="这是第二个阶段的标题，哈哈哈" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="47dp"
+            android:text="@{data.deliveryString}"
+            android:textColor="#FF727F8F"
+            android:textSize="13sp"
+            tools:text="交付日期：2016-08-26" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="75dp"
+            android:text="@{data.priceString}"
+            android:textColor="#FF727F8F"
+            android:textSize="13sp"
+            tools:text="交付金额：¥ 8,000.00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="75dp"
+            android:text="@{data.status.alics}"
+            android:textColor="@{data.status.color}"
+            android:textSize="13sp"
+            tools:text="待验收" />
+
+        <View
+            style="@style/DivideLine"
+            android:layout_gravity="bottom" />
+
+    </FrameLayout>
+
+</layout>

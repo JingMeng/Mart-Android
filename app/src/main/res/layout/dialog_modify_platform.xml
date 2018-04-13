@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp1080_45"
+        android:layout_marginRight="@dimen/dp1080_45"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp1080_149"
+            android:layout_marginLeft="@dimen/dp1080_50"
+            android:gravity="center_vertical"
+            android:text="修改平台"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp1080_53" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dip"
+            android:layout_marginLeft="@dimen/dp1080_50"
+            android:layout_marginRight="@dimen/dp1080_50"
+            android:background="#4289DB" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp1080_45"
+            android:layout_marginLeft="@dimen/dp1080_50"
+            android:layout_marginRight="@dimen/dp1080_50"
+            android:layout_marginTop="@dimen/dp1080_45"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1080_125"
+                android:orientation="horizontal">
+
+                <CheckedTextView
+                    android:id="@+id/btn1"
+                    style="@style/DialogModifyItem"
+                    android:text="@string/huoguo_platform_web" />
+
+
+                <CheckedTextView
+                    android:id="@+id/btn4"
+                    style="@style/DialogModifyItem"
+                    android:layout_marginLeft="@dimen/dp1080_35"
+                    android:text="@string/huoguo_platform_wexin" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1080_125"
+                android:layout_marginTop="@dimen/dp1080_37"
+                android:orientation="horizontal">
+
+                <CheckedTextView
+                    android:id="@+id/btn2"
+                    style="@style/DialogModifyItem"
+                    android:text="@string/huoguo_platform_ios" />
+
+                <CheckedTextView
+                    android:id="@+id/btn3"
+                    style="@style/DialogModifyItem"
+                    android:layout_marginLeft="@dimen/dp1080_35"
+                    android:text="@string/huoguo_platform_android" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1080_125"
+                android:layout_marginTop="@dimen/dp1080_37"
+                android:orientation="horizontal">
+
+                <CheckedTextView
+                    android:id="@+id/btn5"
+                    style="@style/DialogModifyItem"
+                    android:text="@string/huoguo_platform_front" />
+
+                <CheckedTextView
+                    android:id="@+id/btn6"
+                    style="@style/DialogModifyItem"
+                    android:layout_marginLeft="@dimen/dp1080_35"
+                    android:text="@string/huoguo_platform_h5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1080_125"
+                android:layout_marginTop="@dimen/dp1080_37"
+                android:orientation="horizontal">
+
+                <CheckedTextView
+                    android:id="@+id/btn7"
+                    style="@style/DialogModifyItem"
+                    android:text="@string/huoguo_platform_crawler" />
+
+                <CheckedTextView
+                    style="@style/DialogModifyItem"
+                    android:visibility="invisible"
+                    android:layout_marginLeft="@dimen/dp1080_35"
+                    android:text="" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View style="@style/DivideLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_botton_height"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_cancle"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="取消" />
+
+            <View
+                android:id="@+id/buttonDivide0"
+                style="@style/DivideLineVer" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_ok"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="确定" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

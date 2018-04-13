@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="1"
+    tools:context="net.coding.mart.user.examination.ConfirmBeginExmActivity">
+
+
+    <ImageView
+        android:id="@+id/begin_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/examination_begin_image" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/begin_image"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:lineSpacingMultiplier="1.5"
+        android:text="请您认真阅读《开发者服务规范》"
+        android:textColor="@color/font_black_0"
+        android:textSize="16sp" />
+
+
+    <Button
+        android:id="@+id/startExam"
+        style="@style/SendButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:enabled="true"
+        android:text="开始测试" />
+
+    <View
+        android:id="@+id/clickProtocol"
+        android:layout_width="140dp"
+        android:layout_height="22dp"
+        android:layout_marginLeft="100dp"
+        android:layout_alignTop="@+id/content" />
+
+</RelativeLayout>

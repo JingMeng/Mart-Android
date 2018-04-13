@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_dialog_white_bg"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            style="@style/DialogTitle"
+            android:text="码市提醒您" />
+
+        <ImageView
+            android:id="@+id/demo_closebtn"
+            style="@style/DialogCloseButton" />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/DialogTopDivideLine" />
+
+    <TextView
+        style="@style/DialogItemTitle"
+        android:text="需求方" />
+
+    <TextView
+        style="@style/DialogItemContent"
+        android:text="如果您有冻结资金，码市会在您确认任何一个阶段验收时，当前阶段款的10%将会被解冻、打入您的开发宝中，可直接提现。" />
+
+    <TextView
+        style="@style/DialogItemTitle"
+        android:text="开发者" />
+
+    <TextView
+        style="@style/DialogItemContent"
+        android:text="如果您有冻结资金，码市会在您参与的项目的任何一个阶段验收通过时，当前阶段款的10%将会被解冻打入您的开发宝中。" />
+
+    <TextView
+        style="@style/DialogItemTitle"
+        android:text="注意！" />
+
+    <TextView
+        style="@style/DialogItemContent"
+        android:text="如剩余冻结资金不足验收阶段款的10%，则全部解冻。" />
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<resources>>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!--<item name="android:windowDrawsSystemBarBackgrounds">true</item>-->
+        <!--<item name="android:statusBarColor">@android:color/transparent</item>-->
+        <item name="colorPrimaryDark">@color/window_bar_background</item>
+    </style>
+
+    <style name="SendButton" parent="@style/BaseSendButton">
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="DrawerLayoutTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="actionBarStyle">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="android:actionBarStyle">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+
+        <item name="colorPrimary">@color/action_bar_background</item>
+        <item name="colorPrimaryDark">@color/window_bar_background</item>
+        <item name="android:colorPrimary">@color/action_bar_background</item>
+        <item name="android:colorPrimaryDark">@color/window_bar_background</item>
+
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+        <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+    </style>
+
+    <style name="select_pay_dialog">
+        <item name="android:windowAnimationStyle">@style/select_pay_dialog_animation</item>
+    </style>
+
+</resources>

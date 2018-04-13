@@ -1,0 +1,48 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divide">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/divide"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layoutRoot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="7.5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7.5dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/validate_phone_layout" />
+
+                </LinearLayout>
+
+                <include layout="@layout/divide_10_top_bottom" />
+
+                <Button
+                    android:id="@+id/loginButton"
+                    style="@style/SendButton"
+                    android:enabled="false"
+                    android:text="提交" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

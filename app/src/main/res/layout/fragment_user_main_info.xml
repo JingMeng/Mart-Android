@@ -1,0 +1,97 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divide"
+    tools:context="net.coding.mart.user.UserMainInfoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/divide">
+
+            <TextView
+                android:id="@+id/codersSection"
+                style="@style/RewardDetailSection"
+                android:paddingTop="10dp"
+                android:text="完善以下信息，即可报名项目"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+        <net.coding.mart.common.widget.ListItem2
+            android:id="@+id/accountInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foreground="?attr/selectableItemBackground"
+            app:itemBottomLine="false"
+            app:itemIcon="@mipmap/ic_list_account"
+            app:itemText="个人信息" />
+
+        <include layout="@layout/divide_line_15_left" />
+
+        <net.coding.mart.common.widget.ListItem2
+            android:id="@+id/skillInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foreground="?attr/selectableItemBackground"
+            app:itemBottomLine="false"
+            app:itemIcon="@mipmap/ic_list_skill"
+            app:itemText="技能展示" />
+
+        <include layout="@layout/divide_line_15_left" />
+
+        <net.coding.mart.common.widget.ListItem2
+            android:id="@+id/examination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foreground="?attr/selectableItemBackground"
+            app:itemIcon="@mipmap/ic_examination"
+            app:itemText="码市测试" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <net.coding.mart.common.widget.ListItem2
+                android:id="@+id/identityAuthentication"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:foreground="?attr/selectableItemBackground"
+                app:itemBottomLine="false"
+                app:itemIcon="@mipmap/ic_identity_authentication"
+                app:itemText="码市认证" />
+
+            <View
+                style="@style/DivideSectionBottom5"
+                android:layout_below="@id/identityAuthentication" />
+
+            <com.cpiz.android.bubbleview.BubbleTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:id="@+id/bubbleTextView"
+                android:layout_above="@id/bottomNavigation"
+                android:layout_below="@id/identityAuthentication"
+                android:text="全新自动化认证流程，快捷方便"
+                app:bb_arrowDirection="Up"
+                app:bb_arrowPosDelta="70dp"
+                app:bb_arrowPosPolicy="SelfBegin"
+                app:bb_fillColor="@color/tool_tip_background"
+                app:bb_cornerRadius="2dp"
+                tools:visibility="visible" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

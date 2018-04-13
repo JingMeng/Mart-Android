@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/divide_10_top_bottom" android:id="@+id/sectionTop"/>
+
+    <RelativeLayout
+        android:id="@+id/section"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@color/stand_bg"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:src="@mipmap/ic_high_pay_list" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginBottom="4.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="4.5dp"
+            android:layout_toRightOf="@id/icon"
+            android:drawablePadding="15dp"
+            android:gravity="center"
+            android:text="@string/high_pay_tip_title1"
+            android:textColor="@color/font_black_2"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/allHighReward"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="4.5dp"
+            android:layout_marginTop="4.5dp"
+            android:layout_marginRight="11dp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/user_home_arrow"
+            android:gravity="center"
+            android:text="查看全部"
+            android:textColor="@color/font_black_9"
+            android:textSize="12sp" />
+
+        <View
+            android:id="@+id/divide"
+            style="@style/DivideLine"
+            android:layout_below="@id/allHighReward"
+            android:layout_marginLeft="@dimen/padding_15" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/divide"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/highRewardLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:orientation="horizontal">
+
+                <!--<include layout="@layout/main_recylcer_view_header_item" />-->
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </RelativeLayout>
+
+    <include layout="@layout/divide_10_top_bottom" android:id="@+id/sectionBottom" />
+
+    <include layout="@layout/main_recyclerview_item" android:id="@+id/item"/>
+
+</LinearLayout>

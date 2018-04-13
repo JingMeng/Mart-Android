@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:context="net.coding.mart.activity.mpay.MPayWithdrawDynamicActivity"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/divide"
+        android:orientation="vertical">
+
+        <include layout="@layout/activity_mpay_withdraw_dynamic_list_head" />
+
+        <include layout="@layout/activity_mpay_withdraw_dynamic_list_item_10" />
+
+        <include layout="@layout/activity_mpay_withdraw_dynamic_list_item_20" />
+
+        <include layout="@layout/activity_mpay_withdraw_dynamic_list_item_30" />
+
+    </LinearLayout>
+
+</ScrollView>

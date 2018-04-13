@@ -1,0 +1,27 @@
+<resources>
+
+    <string-array name="find_password_list">
+        <item> 通过手机号找回</item>
+        <item>通过邮箱找回</item>
+    </string-array>
+
+    <string-array name="EXAMPLE_TYPES">
+        <item>全部</item>
+        <item>网站</item>
+        <item>APP</item>
+        <item>微信公众号</item>
+        <item>HTML5 应用</item>
+    </string-array>
+
+    <string-array name="INTRODUCE_PAGES_TITLE">
+        <item>关于码市</item>
+        <item>码市流程</item>
+        <item>联系我们</item>
+    </string-array>
+
+    <integer-array name="LIST_PULL_TO_REFRUSE">
+        <item>@color/font_blue</item>
+    </integer-array>
+
+
+</resources>

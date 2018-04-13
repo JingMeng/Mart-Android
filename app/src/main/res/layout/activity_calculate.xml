@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1080_100"
+        android:layout_marginLeft="@dimen/dp1080_30"
+        android:layout_marginRight="@dimen/dp1080_30"
+        android:layout_marginTop="@dimen/dp1080_40"
+        android:background="#FFF6DD"
+        android:gravity="center"
+        android:text="码市提供报价参考，实际价格会有专业人员与您商定"
+        android:textColor="#F5A623"
+        android:textSize="@dimen/sp1080_42" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp1080_30"
+        android:layout_marginRight="@dimen/dp1080_30"
+        android:layout_marginTop="@dimen/dp1080_30"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp1080_45"
+            android:layout_marginTop="@dimen/dp1080_45"
+            android:text="码市预估报价："
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp1080_45" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp1080_45"
+            android:layout_marginTop="@dimen/dp1080_36"
+            android:text="¥ 4,800 - 6,600  元"
+            android:textColor="#F5A623"
+            android:textSize="@dimen/sp1080_72" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dip"
+            android:layout_marginLeft="@dimen/dp1080_45"
+            android:layout_marginRight="@dimen/dp1080_45"
+            android:layout_marginTop="@dimen/dp1080_34"
+            android:background="#dddddd"></View>
+
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp1080_45"
+            android:layout_marginTop="@dimen/dp1080_37"
+            android:text="共有 1 个平台，6 个功能模块"
+            android:textColor="#999999"
+            android:textSize="@dimen/sp1080_45" />
+
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp1080_45"
+            android:layout_marginTop="@dimen/dp1080_24"
+            android:text="预计开发周期：4 - 5 个工作日"
+            android:textColor="#999999"
+            android:textSize="@dimen/sp1080_45" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dip"
+            android:layout_marginTop="@dimen/dp1080_45"
+            android:background="@color/white"></View>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp1080_30"
+        android:layout_marginRight="@dimen/dp1080_30"
+        android:layout_marginTop="@dimen/dp1080_90">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_save"
+            android:layout_width="@dimen/dp1080_480"
+            android:layout_height="@dimen/dp1080_144"
+            android:background="@drawable/solid_blue"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:text="保存报价"/>
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_count"
+            android:layout_width="@dimen/dp1080_480"
+            android:layout_height="@dimen/dp1080_144"
+            android:background="@drawable/border_blue"
+            android:textColor="#4289DB"
+            android:layout_alignParentLeft="true"
+            android:text="调整需求重新记算"/>
+
+    </RelativeLayout>
+</LinearLayout>

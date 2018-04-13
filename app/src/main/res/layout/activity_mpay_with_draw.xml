@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divide"
+    tools:context=".activity.mpay.MPayWithdrawActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/YellowTipTitleTextView"
+            android:id="@+id/topTip"
+            android:text="请您认真阅读《码市开发宝服务协议》，了解提现风险" />
+
+        <include layout="@layout/divide_15_top_bottom" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@color/stand_bg"
+            android:layout_height="64dp">
+            
+            <View
+                android:id="@+id/icon"
+                android:background="@mipmap/ic_pay_zhifubao"
+                android:layout_width="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/font_black_2"
+                android:layout_toRightOf="@id/icon"
+                android:layout_alignTop="@id/icon"
+                android:text="支付宝"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/font_black_80"
+                android:layout_toRightOf="@id/icon"
+                android:layout_alignBottom="@id/icon"
+                android:id="@+id/accountName"
+                tools:text="account@gmail.com （姓名）"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/divide_15_top_bottom" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/stand_bg"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="金额"
+                android:textColor="@color/font_black_2"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/money"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/icon"
+                android:background="@null"
+                android:hint="输入提现金额"
+                android:inputType="numberDecimal"
+                android:textColor="@color/font_black_2"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <include layout="@layout/divide_5_bottom" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="提现款项会在 7 个工作日内到账"
+            android:layout_marginLeft="15dp"
+            android:textSize="12sp"
+            android:textColor="@color/font_black_80"
+            android:layout_height="wrap_content" />
+
+        <include layout="@layout/divide_15_bottom" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/stand_bg"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="备注"
+                android:textColor="@color/font_black_2"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/remark"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/icon"
+                android:background="@null"
+                android:hint="备注信息（非必填）"
+                android:textColor="@color/font_black_2"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <include layout="@layout/divide_5_bottom" />
+
+
+        <Button
+            style="@style/SendButton"
+            android:text="下一步"
+            android:enabled="false"
+            android:layout_marginTop="15dp"
+            android:id="@+id/sendButton" />
+    </LinearLayout>
+
+</ScrollView>

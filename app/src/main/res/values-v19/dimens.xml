@@ -1,0 +1,7 @@
+<resources>
+
+
+    <dimen name="recycler_space">10dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+</resources>

@@ -1,0 +1,18 @@
+<resources>>
+
+    <style name="DrawerLayoutTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="actionBarStyle">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="android:actionBarStyle">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+
+        <item name="colorPrimary">@color/action_bar_background</item>
+        <item name="colorPrimaryDark">@color/window_bar_background</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="MainTheme" parent="MainThemeBase">
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/window_bar_background</item>
+    </style>
+</resources>

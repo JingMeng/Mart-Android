@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/divide">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_15"
+            android:text="项目状态"
+            android:textColor="@color/font_black_9"
+            android:textSize="15sp" />
+
+        <!--<View-->
+        <!--style="@style/DivideSectionBottom5" />-->
+
+    </RelativeLayout>
+
+    <net.coding.mart.activity.reward.detail.subway.SubwayView
+        android:id="@+id/subwayView"
+        android:layout_width="match_parent"
+        android:background="@color/stand_bg"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <include layout="@layout/divide_5_bottom" />
+</LinearLayout>

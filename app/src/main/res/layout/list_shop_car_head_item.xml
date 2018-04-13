@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingLeft="15dp"
+    android:paddingRight="20dp"
+    android:orientation="horizontal"
+    android:background="#F3F5F7"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_head"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="36dp"
+        android:textColor="#999999"
+        android:textSize="@dimen/sp1080_45"
+        android:gravity="center_vertical|left"/>
+
+    <TextView
+        android:id="@+id/tv_reset"
+        android:drawableLeft="@mipmap/developer_reset_item"
+        android:text="恢复默认"
+        style="@style/listShopCarHeadItemButton" />
+
+    <TextView
+        android:id="@+id/tv_clear"
+        android:layout_marginLeft="20dp"
+        android:drawableLeft="@mipmap/developer_clear_item"
+        android:text="一键清空"
+        style="@style/listShopCarHeadItemButton" />
+
+</LinearLayout>

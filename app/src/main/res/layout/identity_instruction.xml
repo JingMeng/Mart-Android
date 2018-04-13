@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:background="@color/divide"
+             android:layout_height="match_parent">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:orientation="vertical">
+
+            <View style="@style/DivideSectionTop5"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/stand_bg"
+                    android:lineSpacingMultiplier="1.5"
+                    android:padding="15dp"
+                    android:id="@+id/content"
+                    android:text="@string/identity_authentication_comment"
+                    android:textColor="@color/font_black_0"/>
+
+            <View style="@style/DivideSectionBottom5"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>

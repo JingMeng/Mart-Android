@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="72.5dp"
+    android:background="@color/stand_bg"
+    android:padding="15dp"
+    tools:context="net.coding.mart.activity.mpay.freeze.FreezeDynamicListActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/font_black_2"
+        android:textSize="15sp"
+        tools:text="开发宝百万项目" />
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/money_color_yellow"
+        android:textSize="17sp"
+        tools:text="+1000" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/font_black_9"
+        android:textSize="12sp"
+        tools:text="2016-07-26" />
+
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/bottom_navigation_bar_height"
+    android:background="@color/divide">
+
+    <RelativeLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1080_210"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp">
+
+
+        <TextView
+            android:id="@+id/sendButton"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp1080_45"
+            android:layout_marginRight="@dimen/dp1080_45"
+            android:background="@drawable/developers_next"
+            style="@style/SendButton"
+            android:text="下一步"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomLayout"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="@dimen/padding_15"
+        android:layout_marginRight="@dimen/padding_15"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <net.coding.mart.common.widget.HuoguoItem
+                android:id="@+id/itemWeb"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                app:huoguoIcon="@mipmap/ic_huoguo_web"
+                app:huoguoIconChecked="@mipmap/ic_huoguo_web_checked"
+                app:huoguoText="@string/huoguo_platform_web" />
+
+            <net.coding.mart.common.widget.HuoguoItem
+                android:id="@+id/itemIos"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="9dp"
+                android:layout_weight="1"
+                app:huoguoIcon="@mipmap/ic_huoguo_ios"
+                app:huoguoIconChecked="@mipmap/ic_huoguo_ios_checked"
+                app:huoguoText="@string/huoguo_platform_ios" />
+
+            <net.coding.mart.common.widget.HuoguoItem
+                android:id="@+id/itemFront"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="9dp"
+                android:layout_weight="1"
+                app:huoguoIcon="@mipmap/ic_huoguo_front"
+                app:huoguoIconChecked="@mipmap/ic_huoguo_front_checked"
+                app:huoguoText="@string/huoguo_platform_front" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="9dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <net.coding.mart.common.widget.HuoguoItem
+                android:id="@+id/itemweixin"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                app:huoguoIcon="@mipmap/ic_huoguo_weixin"
+                app:huoguoIconChecked="@mipmap/ic_huoguo_weixin_checked"
+                app:huoguoText="@string/huoguo_platform_wexin" />
+
+            <net.coding.mart.common.widget.HuoguoItem
+                android:id="@+id/itemandroid"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="9dp"
+                android:layout_weight="2"
+                app:huoguoIcon="@mipmap/ic_huoguo_android"
+                app:huoguoIconChecked="@mipmap/ic_huoguo_android_checked"
+                app:huoguoText="@string/huoguo_platform_android" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="9dp"
+                android:orientation="vertical"
+                android:layout_weight="2">
+
+                <net.coding.mart.common.widget.HuoguoItem
+                    android:id="@+id/itemH5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:huoguoDirection="false"
+                    app:huoguoIcon="@mipmap/ic_huoguo_h5"
+                    app:huoguoIconChecked="@mipmap/ic_huoguo_h5_checked"
+                    app:huoguoText="@string/huoguo_platform_h5" />
+
+                <net.coding.mart.common.widget.HuoguoItem
+                    android:id="@+id/itemCrawler"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_weight="1"
+                    app:huoguoDirection="false"
+                    app:huoguoIcon="@mipmap/ic_huoguo_crawler"
+                    app:huoguoIconChecked="@mipmap/ic_huoguo_crawler_checked"
+                    app:huoguoText="@string/huoguo_platform_crawler" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

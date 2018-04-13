@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="64dp">
+
+    <com.marshalchen.ultimaterecyclerview.swipe.SwipeLayout
+        android:layout_width="match_parent"
+        android:id="@id/recyclerview_swipe"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@color/font_red" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:id="@+id/rootLayout"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/checkButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/padding_15"
+                android:src="@mipmap/local_file_check_not" />
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/checkButton"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/icon"
+                android:lines="1"
+                android:textColor="@color/font_black_2"
+                android:textSize="15sp"
+                tools:text="文件名" />
+
+        </LinearLayout>
+
+    </com.marshalchen.ultimaterecyclerview.swipe.SwipeLayout>
+
+    <View
+        android:id="@+id/divide"
+        android:layout_alignParentBottom="true"
+        style="@style/DivideLine_15_left" />
+
+</RelativeLayout>

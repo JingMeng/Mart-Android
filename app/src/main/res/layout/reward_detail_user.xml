@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/divide_5_top" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:id="@+id/itemRootLayout"
+        android:background="@color/stand_bg">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/userIcon"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="69dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="8.5dp"
+            android:textColor="#FF273444"
+            android:textSize="15sp"
+            tools:text="MangoLi" />
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="8.5dp"
+            android:layout_marginLeft="69dp"
+            android:layout_marginRight="100dp"
+            android:textColor="#FF727F8F"
+            android:textSize="12sp"
+            tools:text="开发者" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="15dp"
+            android:drawablePadding="8dp"
+            android:drawableRight="@mipmap/user_home_arrow"
+            android:text="查看资料"
+            android:textColor="#FF4289DC"
+            android:textSize="15sp" />
+
+    </FrameLayout>
+
+    <include layout="@layout/divide_5_bottom" />
+
+</LinearLayout>

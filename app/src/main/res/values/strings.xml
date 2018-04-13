@@ -1,0 +1,265 @@
+<resources>
+    <string name="app_name">码市</string>
+
+    <string name="menu_reset_mpay_password">设置交易密码</string>
+
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_feedback">意见反馈</string>
+    <string name="title_activity_about">关于码市</string>
+    <string name="title_activity_main2">首页</string>
+
+    <string name="title_activity_terms">码市用户服务协议</string>
+    <string name="title_activity_mart_issue">码市用户权责条款</string>
+
+    <string name="connect_service_fail">连接服务器失败，请检查网络或稍后重试</string>
+
+    <string name="no_system_download_service">"下载失败，你可能关闭了系统的\"下载管理器\"，请到设置里面开启"</string>
+
+    <string name="title_activity_update_tip"></string>
+    <string name="title_activity_job_detail">项目详情</string>
+    <string name="title_activity_join">报名项目</string>
+
+    <string name="valide_code_is_send">验证码已发送</string>
+
+    <string name="hint_loading">正在加载中…</string>
+    <string name="title_activity_set_account">个人信息</string>
+    <string name="title_activity_pick_local">选择地区</string>
+    <string name="title_activity_ia">完善资料</string>
+    <string name="message_push_setting">设置</string>
+    <string name="title_activity_help_center">帮助中心</string>
+
+    <string name="error_get_group_member">获取群成员失败</string>
+
+    <string name="identity_top_tip">您的信息不会透露给任何第三方，请放心填写。联系客服</string>
+    <string name="identity_top_tip_enterprise">请提供企业法人代表真实姓名和身份证号\n您的信息不会透露给任何第三方，请放心填写。联系客服</string>
+
+    <string name="tip_new_phase">码市APP端暂不支持查看新版项目状态详情页，请登录码市网页端查看</string>
+
+    <string name="tip_demand_empty_phase">开发者暂未提交阶段划分，请尽快联系开发者沟通具体需求与开发计划</string>
+    <string name="tip_dev_empty_phase">恭喜，你已经成为本项目的开发者！请你与需求方沟通具体要求，并尽快建立阶段划分</string>
+
+    <string name="rechange_tip">您可以按照以下信息进行银行卡线下转账，转账时请务必备注信息，转账完成后请联系码市客服为您确认；或者登录码市网页版codemart.com，操作银行卡在线转账。</string>
+
+    <!-- time  腾讯云 im start-->
+    <string name="time_yesterday">昨天</string>
+    <string name="time_day">日</string>
+    <string name="time_month">月</string>
+    <string name="time_year">年</string>
+    <string name="time_more">99+</string>
+    <string name="title_activity_group_chat_setting">GroupChatSettingActivity</string>
+
+
+    <!-- message -->
+    <string name="summary_image">[图片]</string>
+    <string name="summary_voice">[语音]</string>
+    <string name="summary_video">[小视频]</string>
+    <string name="summary_file">[文件]</string>
+    <string name="summary_friend_add">请求添加好友</string>
+    <string name="summary_friend_added">我已添加</string>
+    <string name="summary_friend_add_me">请求添加</string>
+    <string name="summary_friend_recommend">推荐添加</string>
+    <string name="summary_me">我</string>
+    <string name="summary_group_apply">申请加群</string>
+    <string name="summary_group_invite">邀请</string>
+    <string name="summary_group_add">加入群</string>
+    <string name="summary_agree">同意</string>
+    <string name="summary_disagree">拒绝</string>
+    <string name="summary_invite_person">邀请人</string>
+    <string name="summary_handle_person">处理人</string>
+    <string name="summary_group_admin_change">管理员变更</string>
+    <string name="summary_group_info_change">群资料变更</string>
+    <string name="summary_group_mem_change">群成员变更</string>
+    <string name="summary_group_mem_add">加入群</string>
+    <string name="summary_group_mem_quit">退出群</string>
+    <string name="summary_group_mem_kick">被踢出群</string>
+    <string name="summary_group_mem_modify">资料变更</string>
+
+
+    <string name="action_bar_back">返回</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="agree">同意</string>
+    <string name="agreed">已同意</string>
+    <string name="refuse">拒绝</string>
+    <string name="refused">已拒绝</string>
+    <string name="done">完成</string>
+    <string name="friend_allow_all">允许任何人添加</string>
+    <string name="friend_refuse_all">拒绝任何人添加</string>
+    <string name="friend_need_confirm">需验证</string>
+    <string name="default_group_name">默认分组</string>
+    <string name="change_group_error">修改分组失败</string>
+    <string name="people">人</string>
+    <string name="login_error">登录失败，请稍后重试</string>
+    <string name="login_error_timeout">登录失败，当前无网络</string>
+    <string name="login_succ">登录成功</string>
+    <string name="kick_logout">你的账号已在其他终端登录,重新登录</string>
+    <string name="operate_fail">操作失败</string>
+    <string name="need_permission">您需要开启权限,并重启应用</string>
+    <string name="save_succ">保存成功</string>
+    <string name="download_fail">下载失败</string>
+    <string name="downloading">正在下载，请稍候</string>
+    <string name="save_fail">保存失败</string>
+    <string name="save_exist">文件已存在</string>
+    <string name="tls_expire">账号登录已过期，请重新登录</string>
+    <string name="env_normal">当前连接正式环境</string>
+    <string name="env_test">当前连接测试环境</string>
+    <string name="file_not_found">未找到文件，请稍后重试</string>
+    <string name="google_service_not_available">google推送服务不可用，请检查google play设置</string>
+
+    <!-- conversation fragment -->
+    <string name="conversation_system">系统消息</string>
+    <string name="conversation_system_friend">新朋友</string>
+    <string name="conversation_system_group">群组消息</string>
+    <string name="conversation_del">删除会话</string>
+    <string name="conversation_draft">[草稿]</string>
+
+    <!-- time  腾讯云 im end-->
+
+    <string name="examination_begin_tips">请您认真阅读《开发者服务指南》，了解作为开发者如何规范地在码市平台上参与项目。阅读完成后，请参与如下的测试问卷，以便于 Coding 码市知悉您对码市平台开发流程的学习成果。通过本次秘笈测试，您就可以报名码市的项目了！</string>
+
+    <string name="title_activity_share_sina_help"></string>
+
+    <string name="identity_authentication_comment">尊敬的码市用户：\n
+        \t\t\t\t您好！欢迎您使用码市平台！\n
+        \t\t\t\t基于保障用户资金安全的原则，码市平台需要对涉及资金往来的用户进行身份认证。 为使您更好地使用码市平台，请您认真阅读并遵守《码市平台身份认证说明》（以下简称“本说明”）。\n
+        \t\t\t\t用户应保证其提供给码市平台的所有资料和信息的真实性、合法性、准确性和有效性； 否则，码市平台有权终止和取消用户通过码市平台获取的服务和酬金。 因用户提供的资料偏差给码市平台或第三方造成损害的，该用户应依法承担相应的责任。\n
+        \t\t\t\t保护用户隐私信息是码市平台的一项基本原则，码市平台会采取合理有效的措施确保用户信息的安全性，请您放心！ 除法律法规规定的情形外，未经用户许可 码市平台绝不会向任何第三方泄漏用户的资料和信息。\n
+        \t\t\t\t用户理解并同意： 授权码市平台对其提交的资料和信息进行甄别核实； 码市平台基于法律法规对已授权的用户提供的资料和信息进行身份审核和认证。\n
+        \t\t\t\t感谢您的配合，祝您顺利通过认证！\n\n
+        码市团队
+</string>
+
+    <string name="mpay_agreement">一、 概述\n
+“开发宝”系深圳市码市科技有限公司(以下简称“码市”)旗下自主研发的线上交易资金 管理平台，开发宝服务是受您委托代您收付项目款项的资金转移服务。对使用本公司服务的 用户简称为“您”或“用户”。 \n
+您确认，在您注册成为码市用户以接受本公司的服务，或您以其他本公司允许的方式实际使 用本公司服务前，您已充分阅读、理解并接受本规则的全部内容，一旦您使用开发宝服务， 即表示您同意遵循本规则之所有约定。 \n
+码市提醒您认真阅读、充分理解本规则各条款。如您不同意接受本规则的任意内容，或者无 法准确理解相关条款含义的，请不要进行后续操作。如果您对本规则的条款有疑问的，请通 过本公司客服渠道进行询问，本公司将向您解释条款内容。\n\n
+二、开发宝服务规则\n
+1. 适用:开发宝适用于在码市注册的所有用户用于在软件开发交易过程中的项目款项托收 代付业务。\n
+2. 使用规则:\n
+(1)开发宝服务使用前提:您的码市账户须绑定支付宝账号，用于项目款提现; \n
+(2)开发宝充值:您可通过支付宝、微信、银行转账等方式对开发宝进行充值;\n
+(3)开发宝支付:您开发宝中余额可用于支付码市上的付费服务或与第三方服务方合作的 项目款;\n
+(4)开发宝提现:\n
+a. 您可在开发宝上申请余额提现，提现款项包含您在码市上劳动所得或项目/服务退 回的相应款项。默认不管从何渠道充值，提现款项一律返回到账户所绑定的支付宝账号。\n
+b. 操作提现申请后，码市将会在 7 个工作日内把款项返回至您账户所绑定的支付宝 账户中。\n
+c. 如您在码市的身份为“开发团队”，则提现时需按提醒要求向码市提供有效的发票。\n
+3. 发生以下情况码市不给予受理:\n
+(1)如经用户自主操作确认支付给服务方或第三方的款项。\n
+(2)经调查或经码市合理判断，对您主张您的资金未经本人授权支出的事实存疑或码市有 理由认为可能由您本人操作或是您的配偶、亲属、朋友或雇员、代理人等所为的。如:资金 支出的操作行为发生在可信网络环境下(如常用设备、IP、通过短信验证等)，或存在您本 人陈述与码市调查到的事实不符等可疑情形。 \n
+(3)经调查或经码市合理判断认为是因您的故意行为、重大过失或违法行为造成您自身资 金损失的。经调查或经码市合理判断认为是因他人的欺诈、胁迫等行为造成您资金损失的。 \n
+(4)您未能提供码市所要求提供的全部或部分资料，或不积极配合码市调查的;或经码市 合理判断之后认为您提供的资料不能证明您的资金是在未经本人授权情况下支出的。 \n
+(5)由于盗用者以外的其他第三方原因造成您资金损失的。 \n
+(6)由于您支付宝账号、微信账号、银行账号等漏洞造成您资金损失的。 \n
+(7)您没有遵守《码市用户服务协议》或码市公布的其他规则，经码市合理判断认为不需 要向您进行补偿的，包括在码市上存在欺诈、炒信、侵犯他人合法权益等行为。 \n
+(8)因台风、地震、海啸、洪水、停电、战争、恐怖袭击等不可抗力之因素，造成本公司 系统障碍不能执行业务的。 \n
+(9)由于黑客攻击、电信部门技术调整或故障、网站升级、银行方面的问题等原因而造成 的服务中断或者延迟。\n\n
+三、其他\n
+码市有权随时修改本规则，一旦相关内容发生变动，码市公司将会通过网站公告等方式向您 告知。如果您不同意码市对开发宝使用规则所做的修改，您应立即停止使用本项服务。如果 您继续使用码市服务，则视为您接受并认可本规则相关条款的修改。\n
+    </string>
+    <string name="title_activity_banner"></string>
+    <string name="title_activity_login">登录</string>
+    <string name="title_activity_phone_set_password">重置密码</string>
+    <string name="title_activity_phone_reset_password">手机号重置密码</string>
+    <string name="title_activity_email_reset_password">邮箱重置密码</string>
+    <string name="title_activity_input_account">找回密码</string>
+    <string name="title_activity_email_set_password">重置密码</string>
+    <string name="title_activity_pay">支付</string>
+    <string name="title_activity_publish_job_detail">项目详情</string>
+    <string name="title_activity_pay_success">支付详情</string>
+    <string name="title_activity_phone_register">注册</string>
+    <string name="title_activity_example">码市案例</string>
+    <string name="title_activity_notification">通知中心</string>
+    <string name="title_activity_introduce">码市介绍</string>
+
+    <string name="title_activity_publish_reward">发布需求</string>
+    <string name="title_activity_publish_entrance"></string>
+    <string name="title_activity_guide"></string>
+    <string name="title_activity_user_skill">技能展示</string>
+    <string name="title_activity_add_role">添加角色</string>
+    <string name="title_activity_add_project_exp">添加项目</string>
+    <string name="title_activity_user_main2">个人资料</string>
+    <string name="title_activity_reward_detail">项目详情</string>
+    <string name="title_activity_reward_detail_web">项目详情</string>
+    <string name="title_activity_coder_info">码士信息</string>
+    <string name="title_activity_coder_detail">申请资料</string>
+    <string name="title_activity_coder_judge_detail">评价详情</string>
+    <string name="title_activity_wxentry">微信支付</string>
+    <string name="title_activity_country_pick">选择国家和地区</string>
+
+    <string name="title_activity_reward_activities">项目动态</string>
+
+    <string name="tag_publish_list">项目</string>
+    <string name="tag_home">首页</string>
+    <string name="tag_publish">发布</string>
+    <string name="tag_my_publish">我发布的</string>
+    <string name="tag_my_join">我参与的</string>
+    <string name="tag_me">个人中心</string>
+    <string name="tag_huoguo">报价</string>
+
+    <string name="alert_activity_email2">该邮箱尚未激活，请尽快去邮箱查收邮件并激活帐号。如若在收件箱中未看到激活邮件，请留意一下垃圾邮件箱(T_T)。</string>
+
+    <string name="login_identity_title">选择您的角色</string>
+    <string name="login_identity_content">选完将进入对应的角色视图页面。</string>
+    <string name="login_identity_publish">我是需求方</string>
+    <string name="login_identity_join">我是开发者</string>
+
+    <string name="huoguo_tip_select_p005_pages">请填写前端项目页面数量</string>
+    <string name="huoguo_tip_font_count">请至少选择5个非默认选项</string>
+    <string name="switch_to_join">切换至开发者模式</string>
+    <string name="switch_to_publish">切换至需求方模式</string>
+    <string name="developer_pay_price">&#165;1</string>
+    <string name="developer_money">&#165;</string>
+
+    <string name="clear_cache_message">缓存数据有助于再次浏览或离线查看，你确定要清除缓存吗？</string>
+    <string name="title_activity_modify_work_phone">修改工作手机号</string>
+    <string name="title_activity_modify_work_email">修改工作邮箱</string>
+    <string name="title_activity_set_mpay_password_main">设置交易密码</string>
+    <string name="title_activity_set_mpay_password">设置交易密码</string>
+    <string name="title_activity_modify_mpay_password">修改交易密码</string>
+    <string name="title_activity_mpay_dynamic">开发宝</string>
+    <string name="title_activity_mpay_recharge">充值</string>
+    <string name="title_activity_mpay_withdraw">提现</string>
+    <string name="title_activity_mpay_withdraw_dynamic">提现</string>
+    <string name="title_activity_mpay_set_withdraw_account">提现账户</string>
+    <string name="recharge_mpay_account">码市开发宝账户充值，充值账户：%s</string>
+    <string name="title_activity_input_deposit">支付订金</string>
+    <string name="title_activity_mpay_pay_order">支付订单</string>
+    <string name="title_activity_mpay_dynamic_list_detail">交易详情</string>
+    <string name="title_activity_save_price">保存报价</string>
+    <string name="title_activity_quick_register">完善账户信息</string>
+    <string name="title_activity_authentication_photo">企业认证</string>
+    <string name="title_activity_freeze_dynamic_list">冻结资金</string>
+    <string name="title_activity_pay_stage">支付阶段款</string>
+    <string name="title_activity_project_exp_list">选择显示项目</string>
+    <string name="title_activity_reward_industry">项目行业</string>
+    <string name="title_activity_huoguo">选择项目类型</string>
+    <string name="title_activity_identity">实名认证</string>
+    <string name="title_activity_exam">码市测试</string>
+    <string name="title_activity_exam_entrance">码市测试</string>
+    <string name="high_pay_tip_title1">码市直营项目专区</string>
+    <string name="high_pay_tip_message">码市直营作为服务商，直接面向需求方提供标准、稳定与有保障的软件开发服务。码市直营期待与优质开发者进行高效合作，共同完成项目交付，实现共赢。</string>
+    <string name="empty"></string>
+    <string name="identity_title">认证说明</string>
+    <string name="title_identity_scan_qrcode">如何扫描二维码？</string>
+    <string name="title_local_file">本地文件</string>
+    <string name="title_set_account_and_password">设置帐号密码</string>
+    <string name="title_enterprise_activity">企业信息</string>
+    <string name="title_enterprise_identity_activity">企业认证</string>
+    <string name="title_invoice_activity">发票管理</string>
+
+    <string name="introduce_page_0_content0">码市是一个软件外包服务平台，通过智能匹配系统快速连接开发者与需求方，提供在线的项目管理工具与资金托管服务，提高软件交付的效率，保障需求方和开发者权益，帮助软件开发行业实现高效的资源匹配。</string>
+    <string name="stage_pay_title">码市提醒您</string>
+    <string name="stage_pay_message">为保障您的利益，需求方需预先支付当前阶段款到开发宝，此阶段才正式启动。强烈建议在需求方支付当前阶段款后再进行阶段开发。如遇问题，请您及时联系需求方或码市客服。</string>
+    <string name="reward_budget_tip_title">关于项目金额</string>
+    <string name="reward_tip_identity_weixin_pay_title">码市认证</string>
+    <string name="reward_budget_tip_message">合理的项目金额会吸引更多的有经验的开发者参与项目， 从而最大程度地保证项目交付并控制风险。 如果项目金额低于实际研发成本， 即使有开发者合作， 项目很大程度会处于高风险或不可控状态， 结果很大程度上导致开发过程中不断增加费用， 严重延期、项目质量低下、双方纠纷甚至项目烂尾， 从而对您的商业计划、资金造成较大的损失。</string>
+    <string name="huoguo_platform_h5">H5 游戏</string>
+    <string name="huoguo_platform_crawler">爬虫类</string>
+    <string name="huoguo_platform_android">Android App</string>
+    <string name="huoguo_platform_wexin">微信公众号</string>
+    <string name="huoguo_platform_front">HTML5 应用</string>
+    <string name="huoguo_platform_ios">iOS App</string>
+    <string name="huoguo_platform_web">Web 网站</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

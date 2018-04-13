@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divide">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/YellowTipTitleTextView"
+            android:text="请根据项目要求选择较为匹配的信息显示，以便需求方更有针对性地进行筛选。"
+            android:textAlignment="textStart" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/stand_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_15"
+            tools:context="net.coding.mart.job.JoinActivity">
+
+            <TextView
+                style="@style/EditTextTitle"
+                android:layout_marginTop="0dp"
+                android:text="选择您的报名角色 *" />
+
+            <TextView
+                android:id="@+id/jobRole"
+                style="@style/SingleCheckTextView" />
+
+            <TextView
+                style="@style/EditTextTitle"
+                android:layout_marginTop="@dimen/padding_15"
+                android:singleLine="false"
+                android:text="简述你能胜任项目的原因 *" />
+
+            <net.coding.mart.common.widget.WordCountEditText
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:hint="10~300个字符，描述可以包含您对项目的理解、过往的相关经验、采用的技术方案等，详细的描述能增加您选中参与项目的几率。"
+                app:wordCountMax="300"
+                app:wordCountMin="10" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/divide">
+
+            <View style="@style/DivideSectionBottom5" />
+
+            <TextView
+                style="@style/RewardDetailSection"
+                android:text="显示给需求方的个人 / 技能信息"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/stand_bg"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                style="@style/EditTextTitle"
+                android:layout_marginTop="@dimen/padding_15"
+                android:text="选择您要显示的角色类型 *" />
+
+            <TextView
+                android:id="@+id/roleTypes"
+                style="@style/SingleCheckTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1" />
+
+            <TextView
+                style="@style/EditTextTitle"
+                android:layout_marginTop="@dimen/padding_15"
+                android:text="选择您要展示的项目经验 *" />
+
+            <TextView
+                android:id="@+id/projects"
+                style="@style/SingleCheckTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:hint="请选择"
+                android:maxLines="1" />
+
+        </LinearLayout>
+
+        <include layout="@layout/divide_10_bottom" />
+
+        <TextView
+            style="@style/ClickAgreeTextView"
+            android:text="点击「参与项目」，代表您承诺，如有接触非公开的项目信息，您将对这些信息保密" />
+
+        <Button
+            android:id="@+id/joinButton"
+            style="@style/SendButton"
+            android:layout_marginBottom="14dp"
+            android:layout_marginTop="14dp"
+            android:enabled="true"
+            android:text="参与项目" />
+    </LinearLayout>
+
+</ScrollView>

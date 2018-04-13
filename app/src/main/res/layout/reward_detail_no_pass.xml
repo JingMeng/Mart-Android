@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/divide_5_top" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:background="@color/stand_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/noPassTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="26dp"
+            android:drawableLeft="@mipmap/ic_reward_detail_alert"
+            android:drawablePadding="7dp"
+            android:text="很遗憾，您发布的项目未通过"
+            android:textColor="@color/font_black_6"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/noPassButton"
+            android:layout_below="@id/noPassTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:background="@drawable/rect_blue_line"
+            android:gravity="center"
+            android:text="重新发布"
+            android:textColor="@color/font_blue"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/divide_5_bottom" />
+
+</LinearLayout>

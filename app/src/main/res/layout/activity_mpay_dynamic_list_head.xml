@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/action_bar_background"
+            android:orientation="vertical"
+            tools:context="net.coding.mart.activity.mpay.MPayDynamicListActivity">
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="开发宝余额（元）"
+                android:textColor="#B3FFFFFF"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/sum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:textSize="45sp"
+                tools:text="326,200.00" />
+
+            <LinearLayout
+                android:id="@+id/balanceFreezeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:background="#26FFFFFF"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/title0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="可提现余额（元)"
+                        android:textColor="#B3FFFFFF"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/withdrawBalance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/title0"
+                        android:layout_below="@id/title0"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        tools:text="4,506.47" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/freezeBalanceLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="冻结资金（元)"
+                        android:textColor="#B3FFFFFF"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/freezeBalance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/title1"
+                        android:layout_below="@id/title1"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        tools:text="4,506.47" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/topWarn"
+            android:visibility="gone"
+            style="@style/YellowTipTitleTextView"
+            android:text="提醒：码市APP端暂未开通“团队用户提现”功能，请登录码市网页端申请提现。" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/withdrawRechargeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/stand_bg"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/withdraw"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:foreground="?attr/selectableItemBackground">
+
+            <TextView
+                android:id="@+id/withdrawTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@mipmap/mpay_dynamic_list_withdraw"
+                android:drawablePadding="12.5dp"
+                android:gravity="center"
+                android:text="提现"
+                android:textColor="#FF434A54"
+                android:textSize="15sp" />
+
+        </FrameLayout>
+
+        <View style="@style/DivideLineVer" />
+
+        <FrameLayout
+            android:id="@+id/recharge"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:foreground="?attr/selectableItemBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@mipmap/mpay_dynamic_list_recharge"
+                android:drawablePadding="12.5dp"
+                android:gravity="center"
+                android:text="充值"
+                android:textColor="#FF434A54"
+                android:textSize="15sp" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/enterpriceRecharge"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/stand_bg"
+        android:foreground="?attr/selectableItemBackground">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="@dimen/padding_15"
+            android:drawableLeft="@mipmap/mpay_dynamic_list_recharge"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="充值"
+            android:textColor="#FF434A54"
+            android:textSize="15sp" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_gravity="bottom"
+        android:background="@color/divide_line" />
+
+</LinearLayout>

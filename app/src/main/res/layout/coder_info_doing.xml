@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="coder"
+            type="net.coding.mart.json.reward.Coder" />
+    </data>
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/divide"
+        android:orientation="vertical">
+
+        <View style="@style/DivideSectionTop5" />
+
+        <include layout="@layout/divide_1" />
+
+        <LinearLayout style="@style/coder_info_list_item_layout">
+
+            <TextView
+                android:text="ID：　　　"
+                style="@style/coder_info_list_item0" />
+
+            <TextView
+                tools:text="@{coder.userName}"
+                style="@style/coder_info_list_item1" />
+        </LinearLayout>
+
+        <include layout="@layout/divide_1_15_standbg" />
+
+        <LinearLayout style="@style/coder_info_list_item_layout">
+
+            <TextView
+                android:text="姓名：　　"
+                style="@style/coder_info_list_item0" />
+
+            <TextView
+                tools:text="@{coder.name}"
+                style="@style/coder_info_list_item1" />
+        </LinearLayout>
+
+        <include layout="@layout/divide_1_15_standbg" />
+
+        <LinearLayout style="@style/coder_info_list_item_layout">
+
+            <TextView
+                android:text="报名角色："
+                style="@style/coder_info_list_item0" />
+
+            <TextView
+                tools:text="@{coder.roleType}"
+                style="@style/coder_info_list_item1" />
+        </LinearLayout>
+
+        <include layout="@layout/divide_1_15_standbg" />
+
+        <LinearLayout style="@style/coder_info_list_item_layout">
+
+            <TextView
+                android:text="联系电话："
+                style="@style/coder_info_list_item0" />
+
+            <TextView
+                tools:text="@{coder.mobile}"
+                android:onClick="@{coder::onClickMobile}"
+                style="@style/coder_info_list_item1" />
+        </LinearLayout>
+
+        <include layout="@layout/divide_1_15_standbg" />
+
+        <LinearLayout style="@style/coder_info_list_item_layout">
+
+            <TextView
+                android:text="QQ：　　   "
+                style="@style/coder_info_list_item0" />
+
+            <TextView
+                tools:text="@{coder.qq}"
+                android:onClick="@{coder::onClickQQ}"
+                style="@style/coder_info_list_item1" />
+        </LinearLayout>
+
+
+        <View style="@style/DivideSectionBottom5" />
+    </LinearLayout>
+
+</layout>

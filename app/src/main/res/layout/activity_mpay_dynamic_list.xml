@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:elevation='0dp'
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:elevation='0dp'
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/divide"
+        tools:context="net.coding.mart.activity.mpay.MPayDynamicListActivity">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:overScrollMode="never" />
+
+        <LinearLayout
+            android:id="@+id/filterLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/stand_bg"
+                android:gravity="center_vertical">
+
+                <net.coding.mart.common.widget.main.DropdownButton_
+                    android:id="@+id/timeFilter"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:foreground="?attr/selectableItemBackground" />
+
+                <net.coding.mart.common.widget.main.DropdownButton_
+                    android:id="@+id/typeFilter"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:foreground="?attr/selectableItemBackground" />
+
+                <net.coding.mart.common.widget.main.DropdownButton_
+                    android:id="@+id/statusFilter"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:foreground="?attr/selectableItemBackground" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_gravity="bottom"
+                android:background="@color/divide_line" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/mask"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#80000000"
+                    android:elevation="@dimen/top_z" />
+
+                <ListView
+                    android:id="@+id/timeListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="200dp"
+                    android:divider="@drawable/list_divider"
+                    android:dividerHeight="0.5dp"
+                    android:elevation="@dimen/top_z"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/typeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/stand_bg"
+                    android:elevation="@dimen/top_z"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/typeListView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@drawable/list_divider"
+                        android:dividerHeight="0.5dp"
+                        android:elevation="@dimen/top_z" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/divide_line" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:elevation="@dimen/top_z"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="10dp">
+
+                        <TextView
+                            android:id="@+id/typeCancel"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/cancel_bg"
+                            android:elevation="@dimen/top_z"
+                            android:gravity="center"
+                            android:text="取消"
+                            android:textColor="@color/font_black_2"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/typeOk"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/ok_bg"
+                            android:elevation="@dimen/top_z"
+                            android:gravity="center"
+                            android:text="确定"
+                            android:textColor="@color/font_white"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/statusLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/stand_bg"
+                    android:elevation="@dimen/top_z"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/statusListView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@drawable/list_divider"
+                        android:dividerHeight="0.5dp"
+                        android:elevation="@dimen/top_z" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/divide_line" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:elevation="@dimen/top_z"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="10dp">
+
+                        <TextView
+                            android:id="@+id/statusCancel"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/cancel_bg"
+                            android:elevation="@dimen/top_z"
+                            android:gravity="center"
+                            android:text="取消"
+                            android:textColor="@color/font_black_2"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/statusOk"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/ok_bg"
+                            android:elevation="@dimen/top_z"
+                            android:gravity="center"
+                            android:text="确定"
+                            android:textColor="@color/font_white"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

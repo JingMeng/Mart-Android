@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_height="wrap_content"
+              android:layout_width="match_parent"
+              android:background="@color/stand_bg"
+              android:orientation="vertical">
+
+    <View style="@style/DivideLine_15"/>
+
+    <RelativeLayout style="@style/SettingListItem"
+                    android:minHeight="10dp"
+                    android:paddingTop="12dp" android:paddingBottom="0dp">
+
+        <TextView
+                style="@style/SettingListItemText1"
+                android:text="交易号"
+                android:textSize="13sp"
+                android:textColor="#FF434A54"/>
+
+        <TextView
+                android:id="@+id/orderId"
+                android:textSize="13sp"
+                style="@style/SettingListItemText2ModifyPassword"
+                android:background="@null"
+                android:gravity="right"
+                android:layout_marginRight="0dp"
+                android:layout_marginLeft="85dp"
+                android:textColor="@color/font_black_9"
+                tools:text="6121313131113131313612131313111313131361213131311131313136121313131113131313"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout style="@style/SettingListItem"
+                    android:minHeight="10dp"
+                    android:paddingTop="12dp" android:paddingBottom="0dp">
+
+        <TextView
+                style="@style/SettingListItemText1"
+                android:text="交易名称"
+                android:textSize="13sp"
+                android:textColor="#FF434A54"/>
+
+        <TextView
+                android:id="@+id/orderTitle"
+                style="@style/SettingListItemText2ModifyPassword"
+                android:background="@null"
+                android:layout_marginRight="0dp"
+                android:textSize="13sp"
+                android:gravity="right"
+                android:textColor="@color/font_black_9"
+                tools:text="支付项目 $项目id 的项目定金的项目定金的项目定金的项目定金的项目定金的项目定金的项目定金"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout style="@style/SettingListItem"
+                    android:minHeight="10dp"
+                    android:paddingTop="12dp" android:paddingBottom="12dp">
+
+        <TextView
+                style="@style/SettingListItemText1"
+                android:layout_marginTop="0dp"
+                android:text="交易金额"
+                android:textSize="13sp"
+                android:textColor="#FF434A54"/>
+
+        <TextView
+                android:id="@+id/orderPrice"
+                style="@style/SettingListItemText2ModifyPassword"
+                android:background="@null"
+                android:textSize="13sp"
+                android:gravity="right"
+                android:layout_marginRight="0dp"
+                android:textColor="@color/money_color_yellow"
+                tools:text="¥8,000"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

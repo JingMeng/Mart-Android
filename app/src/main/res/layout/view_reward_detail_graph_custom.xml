@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:orientation="vertical">
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--</LinearLayout>-->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rootLayout"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:id="@+id/point0"
+            style="@style/subwayPoint"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp" />
+
+
+        <TextView
+            android:id="@+id/text0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/point0"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-15dp"
+            android:layout_marginTop="@dimen/subway_text_space"
+            android:paddingTop="@dimen/subway_text_top_sapce"
+            android:text="待支付"
+            android:textSize="13sp" />
+
+        <View
+            android:id="@+id/line0"
+            android:layout_toRightOf="@id/point0"
+            style="@style/subwayLine" />
+
+        <ImageView
+            android:id="@+id/point2"
+            style="@style/subwayPoint"
+            android:layout_toRightOf="@id/line0" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/point2"
+            android:paddingTop="@dimen/subway_text_top_sapce"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-15dp"
+            android:layout_marginTop="@dimen/subway_text_space"
+            android:text="招募中"
+            android:textSize="13sp" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="@dimen/subway_line_width"
+            android:layout_height="@dimen/subway_line_height"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/point2"
+            android:background="#d8d8d8" />
+
+        <ImageView
+            android:id="@+id/point3"
+            style="@style/subwayPoint"
+            android:layout_toRightOf="@id/line2" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/point3"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-15dp"
+            android:paddingTop="@dimen/subway_text_top_sapce"
+            android:layout_marginTop="@dimen/subway_text_space"
+            android:text="开发中"
+            android:textSize="13sp" />
+
+        <View
+            android:id="@+id/line3"
+            android:layout_width="@dimen/subway_line_width_half"
+            android:layout_height="@dimen/subway_line_height"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/point3"
+            android:background="#d8d8d8" />
+
+        <FrameLayout
+            android:id="@+id/stageLayout"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/line3" />
+
+        <View
+            android:id="@+id/line4"
+            android:layout_width="@dimen/subway_line_width_half"
+            android:layout_height="@dimen/subway_line_height"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/stageLayout"
+            android:background="#d8d8d8" />
+
+        <ImageView
+            android:id="@+id/point4"
+            android:layout_toRightOf="@id/line4"
+            style="@style/subwayPoint" />
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/point4"
+            android:layout_centerVertical="true"
+            android:paddingTop="@dimen/subway_text_top_sapce"
+            android:layout_marginLeft="-15dp"
+            android:layout_marginTop="@dimen/subway_text_space"
+            android:text="质保中"
+            android:textSize="13sp" />
+
+        <View
+            android:id="@+id/line5"
+            android:layout_width="@dimen/subway_line_width"
+            android:layout_height="@dimen/subway_line_height"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/point4"
+            android:background="#d8d8d8" />
+
+        <ImageView
+            android:id="@+id/point5"
+            style="@style/subwayPoint"
+            android:layout_toRightOf="@id/line5" />
+
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/point5"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-15dp"
+            android:paddingTop="@dimen/subway_text_top_sapce"
+            android:layout_marginTop="@dimen/subway_text_space"
+            android:text="已结束"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+</HorizontalScrollView>

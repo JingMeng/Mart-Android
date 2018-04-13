@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/stand_bg"
+    android:orientation="vertical">
+
+    <com.bigkoo.convenientbanner.ConvenientBanner
+        android:id="@+id/convenientBanner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="@dimen/fill_width_card_merge"
+        app:canLoop="true" />
+
+    <include layout="@layout/divide_10_top_bottom" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/martHelpLayout"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="67dp">
+
+            <RelativeLayout
+                android:id="@+id/martIntroduce"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackground"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="码市介绍"
+                    android:textColor="@color/font_black_2"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="14dp"
+                    android:text="了解码市如何运作"
+                    android:textColor="@color/font_black_6"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_explore_introduce" />
+            </RelativeLayout>
+
+            <View style="@style/DivideLineVer" />
+
+            <RelativeLayout
+                android:id="@+id/martExample"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackground"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="经典案例"
+                    android:textColor="@color/font_black_2"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="14dp"
+                    android:text="它们已在码市实现"
+                    android:textColor="@color/font_black_6"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_explore_example" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View style="@style/DivideLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="67dp">
+
+            <RelativeLayout
+                android:id="@+id/coderSay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackground"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="码士说"
+                    android:textColor="@color/font_black_2"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="14dp"
+                    android:text="开发者眼中的码市"
+                    android:textColor="@color/font_black_6"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_explore_coder_say" />
+            </RelativeLayout>
+
+            <View style="@style/DivideLineVer" />
+
+            <RelativeLayout
+                android:id="@+id/phoneMart"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackground"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="自助估价"
+                    android:textColor="@color/font_black_2"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="14dp"
+                    android:text="轻松完成项目估价"
+                    android:textColor="@color/font_black_6"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:scaleType="centerInside"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_huoguo" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/divide_10_top_bottom" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="103dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="24dp"
+            android:paddingTop="24dp">
+
+            <TextView
+                android:id="@+id/moneyCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textColor="@color/font_blue"
+                android:textSize="21sp"
+                tools:text="4.680.032" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal"
+                android:text="累积总金额"
+                android:textColor="@color/font_black_6"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="24dp"
+            android:paddingTop="24dp">
+
+            <TextView
+                android:id="@+id/rewardCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="@color/font_blue"
+                android:textSize="21sp"
+                tools:text="4.680.032" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal"
+                android:text="累积项目数"
+                android:textColor="@color/font_black_6"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="24dp"
+            android:paddingTop="24dp">
+
+            <TextView
+                android:id="@+id/userCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="@color/font_blue"
+                android:textSize="21sp"
+                tools:text="4.680.032" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal"
+                android:text="注册开发者"
+                android:textColor="@color/font_black_6"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/divide_10_top_bottom" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="#808080"
+        android:textSize="14sp"
+        android:text="最新项目推荐"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/padding_12" />
+
+</LinearLayout>

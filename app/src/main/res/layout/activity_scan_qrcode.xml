@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_scan_qrcode"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.coding.mart.user.identityAuthentication.ScanQRCodeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="一、将下图中二维码下载或截图保存到手机相册。"
+                style="@style/font15" />
+
+            <ImageView
+                android:id="@+id/qrIcon"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="160dp"
+                android:scaleType="fitCenter"
+                android:layout_height="160dp" />
+
+            <TextView
+                android:text="二、使用已实名认证过的微信帐号登录微信 APP,并打开 “发现” 中的 “扫一扫” 功能。"
+                android:layout_marginTop="30dp"
+                style="@style/font15" />
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="15dp"
+                android:src="@mipmap/scan_qrcode_tip_1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="三、点击右上角 “相册” ，选择下载的二维码并扫描便可进入身份认证授权页面。"
+                android:layout_marginTop="30dp"
+                style="@style/font15" />
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="15dp"
+                android:src="@mipmap/scan_qrcode_tip_2"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

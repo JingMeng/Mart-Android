@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="net.coding.mart.job.JobDetailActivity">
+
+    <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/stand_bg"
+            android:layout_weight="1">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/stand_bg"
+                android:minHeight="800dp"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/textTip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF2DEDE"
+                    android:paddingBottom="@dimen/padding_10"
+                    android:paddingLeft="@dimen/padding_15"
+                    android:paddingRight="@dimen/padding_15"
+                    android:paddingTop="@dimen/padding_10"
+                    android:textColor="#FFC55351"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    tools:text="未激活不能参与项目，请前往 coding 网站激活"
+                    tools:visibility="visible"/>
+
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <FrameLayout
+                        android:id="@+id/basicInfoLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_gravity="center_horizontal|top"
+                        android:progressDrawable="@drawable/progressbar_bg"/>
+
+            </FrameLayout>
+
+            <include layout="@layout/divide_5_top"/>
+
+            <WebView
+                    android:id="@+id/webView"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <FrameLayout
+            android:id="@+id/statusButtonBar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            <LinearLayout
+                    android:id="@+id/jobStatusLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    tools:visibility="gone">
+
+                <TextView
+                        style="@style/TextJobDetailBottom"
+                        android:text="审核状态："/>
+
+                <TextView
+                        android:id="@+id/jobStatus"
+                        style="@style/TextJobDetailBottom"
+                        android:paddingLeft="0dp"
+                        tools:text="已取消"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/joinButtonLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/padding_15"
+                    android:paddingRight="@dimen/padding_15">
+
+                <Button
+                        android:id="@+id/joinButton"
+                        style="@style/SendButton"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="0dp"
+                        android:text="重新提交"
+                        tools:visibility="visible"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/divide_1"/>
+
+    </FrameLayout>
+
+</LinearLayout>

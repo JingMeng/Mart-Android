@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/personal"
+        style="@style/RegisterCard"
+        android:layout_marginTop="40dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/icon"
+                style="@style/RegisterCardIcon"
+                android:src="@mipmap/ic_demend_person" />
+
+            <TextView
+                android:id="@+id/title"
+
+                style="@style/RegisterCardTitle"
+                android:text="个人需求方" />
+
+            <TextView
+                style="@style/RegisterCardContent"
+                android:text="适用于没有企业资质个人需求方" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/enterprise"
+        style="@style/RegisterCard"
+        android:layout_below="@id/personal"
+        android:layout_marginTop="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/icon"
+                style="@style/RegisterCardIcon"
+                android:src="@mipmap/ic_demend_enterprise" />
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/RegisterCardTitle"
+                android:text="企业需求方" />
+
+            <TextView
+                style="@style/RegisterCardContent"
+                android:text="适合于已注册企业资质的需求方" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/loginLayout"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/font_black_6"
+            style="@style/loginText"
+            android:text="已有码市帐号，" />
+
+        <TextView
+            android:id="@+id/registerButton"
+            style="@style/loginText"
+            android:text="立即登录" />
+
+    </LinearLayout>
+
+</RelativeLayout>

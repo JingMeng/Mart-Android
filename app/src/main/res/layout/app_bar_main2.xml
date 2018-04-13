@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/stand_bg"
+            android:gravity="center_vertical">
+
+            <net.coding.mart.common.widget.main.DropdownButton_
+                android:id="@+id/chooseType"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <net.coding.mart.common.widget.main.DropdownButton_
+                android:id="@+id/chooseLabel"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <net.coding.mart.common.widget.main.DropdownButton_
+                android:id="@+id/chooseOrder"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="bottom"
+            android:background="@color/divide_line" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <net.coding.mart.common.widget.CustomPullRecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/divide" />
+
+        <View
+            style="@style/DivideSectionBottom5" />
+
+        <View
+            android:id="@+id/mask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80000000"
+            android:elevation="@dimen/top_z" />
+
+        <net.coding.mart.common.widget.main.DropdownListView_
+            android:id="@+id/dropdownType"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="200dp"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/top_z"
+            android:orientation="vertical" />
+
+        <net.coding.mart.common.widget.main.DropdownListView_
+            android:id="@+id/dropdownLabel"
+            android:layout_marginBottom="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/top_z"
+            android:orientation="vertical" />
+
+        <net.coding.mart.common.widget.main.DropdownListView_
+            android:id="@+id/dropdownOrder"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="200dp"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/top_z"
+            android:orientation="vertical" />
+
+    </FrameLayout>
+</LinearLayout>

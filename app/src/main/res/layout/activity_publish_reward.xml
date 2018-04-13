@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divide"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="net.coding.mart.activity.reward.PublishRewardActivity">
+
+    <TextView
+        android:id="@+id/topTip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF2DEDE"
+        android:paddingBottom="@dimen/padding_10"
+        android:paddingLeft="@dimen/padding_15"
+        android:paddingRight="@dimen/padding_15"
+        android:paddingTop="@dimen/padding_10"
+        android:text="需要先完成企业认证才能发布需求 去认证"
+        android:textColor="#FFC55351"
+        android:textSize="12sp"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/divide_15_top" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/stand_bg"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_15"
+                android:paddingRight="@dimen/padding_15">
+
+                <TextView
+                    style="@style/EditTextTitle"
+                    android:layout_marginTop="15dp"
+                    android:text="项目类型" />
+
+                <TextView
+                    android:id="@+id/jobTypeTextView"
+                    style="@style/FullSingleLineEditText"
+                    android:focusable="false"
+                    android:hint="请选择" />
+
+                <TextView
+                    style="@style/EditTextTitle"
+                    android:text="开发者类型" />
+
+                <FrameLayout
+                    android:id="@+id/teamLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <CheckBox
+                        android:id="@+id/checkBoxTeam"
+                        style="@style/MartCheckBox"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center_vertical"
+                        android:text="" />
+
+                    <TextView
+                        style="@style/EditTextTitle"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginTop="15dp"
+                        android:text="招募团队" />
+
+                    <TextView
+                        style="@style/EditTextTip"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="45dp"
+                        android:text="团队项目金额必须高于 10,000 元" />
+
+                </FrameLayout>
+
+                <View style="@style/DivideLine" />
+
+
+                <FrameLayout
+                    android:id="@+id/personLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <CheckBox
+                        android:id="@+id/checkboxPerson"
+                        style="@style/MartCheckBox"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center_vertical"
+                        android:text="" />
+
+                    <TextView
+                        style="@style/EditTextTitle"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginTop="15dp"
+                        android:text="招募个人" />
+
+                    <TextView
+                        android:id="@+id/personType"
+                        style="@style/EditTextTip"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginTop="15dp"
+                        android:text="" />
+
+                    <TextView
+                        style="@style/EditTextTip"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="45dp"
+                        android:text="个人项目金额必须低于 50,000 元" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+            <include layout="@layout/divide_10_top_bottom" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="@dimen/padding_15"
+                android:text="填写项目信息"
+                android:textColor="@color/font_black_80"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/stand_bg"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_15"
+                android:paddingRight="@dimen/padding_15">
+
+                <TextView
+                    style="@style/EditTextTitle"
+                    android:layout_marginTop="@dimen/padding_15"
+                    android:text="项目名称" />
+
+                <EditText
+                    android:id="@+id/jobName"
+                    style="@style/SingleLineEditText"
+                    android:hint="30个字符以内" />
+
+                <include layout="@layout/divide_1" />
+
+                <TextView
+                    style="@style/EditTextTitle"
+                    android:layout_marginTop="@dimen/padding_15"
+                    android:text="项目行业" />
+
+                <TextView
+                    android:id="@+id/jobIndustryTextView"
+                    style="@style/FullSingleLineEditText"
+                    android:focusable="false"
+                    android:hint="请选择" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        style="@style/EditTextTitle"
+                        android:layout_marginTop="0dp"
+                        android:text="项目金额" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/jobPrice"
+                            style="@style/SingleLineEditText"
+                            android:hint="个人项目金额≦ ¥50,000"
+                            android:inputType="number" />
+
+                        <View
+                            style="@style/DivideLine"
+                            android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+
+                    <CheckBox
+                        android:id="@+id/checkBoxBargain"
+                        style="@style/MartCheckBox"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center_vertical"
+                        android:text="可议价" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tryDeveloper"
+                    style="@style/EditTextTip"
+                    android:layout_marginBottom="15dp"
+                    android:text="该项目金额不含税，如需发票，请查看操作文档" />
+
+                <TextView
+                    style="@style/EditTextTitle"
+                    android:text="项目周期（天）" />
+
+                <EditText
+                    android:id="@+id/jobDuration"
+                    style="@style/SingleLineEditText"
+                    android:hint="请输入交付周期"
+                    android:inputType="number" />
+
+                <include layout="@layout/divide_1" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/stand_bg"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_15">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/EditTextTitle"
+                        android:layout_marginTop="0dp"
+                        android:text="项目描述（至少 20 个字符）" />
+
+                    <TextView
+                        android:id="@+id/jobDescriptionTip"
+                        style="@style/TitleTip"
+                        android:text="示例" />
+
+                </RelativeLayout>
+
+                <net.coding.mart.common.widget.WordCountEditText
+                    android:id="@+id/jobDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    app:wordCountHint="请尽量详细描述您的项目，以吸引更多有相关开发经验的开发者报名（20 个字符以上）"
+                    app:wordCountMax="1000"
+                    app:wordCountMin="20" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/stand_bg"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_15">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/EditTextTitle"
+                        android:layout_marginTop="0dp"
+                        android:text="招募要求" />
+
+                    <TextView
+                        android:id="@+id/requestTip"
+                        style="@style/TitleTip"
+                        android:text="示例" />
+                </RelativeLayout>
+
+                <net.coding.mart.common.widget.WordCountEditText
+                    android:id="@+id/jobRequest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    app:wordCountHint="您可以对开发者所在地区、从事行业、擅长技能等方面提出要求"
+                    app:wordCountMax="1000"
+                    app:wordCountMin="0" />
+
+            </LinearLayout>
+
+            <include layout="@layout/divide_10_top_bottom" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="@dimen/padding_15"
+                android:text="联系信息"
+                android:textColor="@color/font_black_80"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/stand_bg"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/padding_15"
+                android:paddingLeft="@dimen/padding_15"
+                android:paddingRight="@dimen/padding_15"
+                android:paddingTop="@dimen/padding_15">
+
+                <TextView
+                    android:id="@+id/inputTip"
+                    android:layout_width="match_parent"
+                    android:layout_height="27dp"
+                    android:background="#FFFFF6DD"
+                    android:gravity="center"
+                    android:text="姓名、邮箱与手机号是让我们联系您的必要信息"
+                    android:textColor="#FFF5A623"
+                    android:textSize="12sp" />
+
+                <TextView
+                    style="@style/EditTextTitle"
+                    android:layout_marginTop="@dimen/padding_15"
+                    android:text="您的姓名 *" />
+
+                <EditText
+                    android:id="@+id/name"
+                    style="@style/SingleLineEditText"
+                    android:hint="姓名" />
+
+                <include layout="@layout/divide_1" />
+
+                <TextView
+                    style="@style/EditTextTitle"
+                    android:layout_marginTop="@dimen/padding_15"
+                    android:text="您的邮箱 *" />
+
+                <EditText
+                    android:id="@+id/email"
+                    style="@style/SingleLineEditText"
+                    android:hint="" />
+
+                <include layout="@layout/divide_1" />
+
+
+                <LinearLayout
+                    android:id="@+id/phoneLayout0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/EditTextTitle"
+                        android:text="手机 *" />
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/phoneValid"-->
+                    <!--style="@style/EditTextTitle"-->
+                    <!--android:layout_marginLeft="15dp"-->
+                    <!--android:layout_marginTop="@dimen/padding_15"-->
+                    <!--android:text="已验证"-->
+                    <!--android:textColor="@color/font_green" />-->
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/sendPhoneMessage"
+                        style="@style/EditTextTitle"
+                        android:layout_width="80dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="@dimen/padding_15"
+                        android:background="@drawable/phone_message_bg_small"
+                        android:gravity="center"
+                        android:text="发送验证码"
+                        android:textColor="@color/phone_message"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/phoneLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/phone"
+                        style="@style/MulLineEditText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="常用电话号码"
+                        android:inputType="phone"
+                        android:lines="1"
+                        android:minHeight="0dp"
+                        android:paddingLeft="70dp"
+                        android:singleLine="true" />
+
+                    <TextView
+                        android:id="@+id/countryCode"
+                        style="@style/MulLineEditText"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:lines="1"
+                        android:minHeight="0dp"
+                        android:singleLine="true"
+                        tools:text="+868" />
+
+                    <EditText
+                        android:id="@+id/phoneCode"
+                        style="@style/MulLineEditText"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:hint="短信验证码"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:minHeight="0dp"
+                        android:singleLine="true" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <CheckBox
+                        android:id="@+id/secretCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/font_blue"
+                        android:checked="true"
+                        android:text="我同意"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/contract"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="《码市用户权责条款》"
+                        android:textColor="@color/font_blue"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/paymentCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/stand_bg"
+                android:orientation="vertical"
+                android:paddingBottom="39dp">
+
+                <include layout="@layout/divide_15_top_bottom" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="39dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/currentPaymnet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="¥9.9"
+                        android:textColor="#FF4289DC"
+                        android:textSize="42sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="5dp"
+                        android:text="/次"
+                        android:textColor="#FF4289DC"
+                        android:textSize="20sp" />
+
+                    <com.flyco.roundview.RoundTextView
+                        android:id="@+id/paymentRedTip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:text="限时价"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="12sp"
+                        app:rv_backgroundColor="#FFF75288"
+                        app:rv_cornerRadius="4dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/cardPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="（原价：  sss         ）"
+                    android:textColor="#FF8796A8"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/cardTip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="支付后项目成功发布即进入招募中"
+                        android:textColor="#FF8796A8"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/cardTip2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/font_red"
+                        android:textSize="14sp"
+                        tools:text="09.11" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/divide_15_top" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_15"
+                android:layout_marginRight="@dimen/padding_15"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/nextButtonTipCheck"
+                    style="@style/MartCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="我同意遵守"
+                    android:textColor="@color/font_6"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/nextButtonTip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="《码市用户权责条款》"
+                    android:textColor="@color/font_6"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/sendButton"
+                style="@style/SendButton"
+                android:layout_marginTop="20dp"
+                android:enabled="false"
+                android:text="付款并发布" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

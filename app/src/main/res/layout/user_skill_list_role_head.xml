@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/YellowTipTitleTextView"
+        android:text="让 Coding 了解您擅长的技能，为您推荐最合适的项目" />
+
+    <RelativeLayout
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/EditTextTitle"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_centerVertical="true"
+            android:text="能胜任的角色类型 *" />
+
+        <TextView
+            android:text="添加"
+            android:drawableLeft="@mipmap/ic_skill_add_role_small"
+            android:textColor="@color/font_blue"
+            android:textSize="12sp"
+            android:id="@+id/addRoleSmall"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/addRole"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#E8F1FF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@mipmap/ic_skill_add_role"
+            android:drawablePadding="5dp"
+            android:text="添加角色类型"
+            android:textColor="#4289DB"
+            android:textSize="15sp" />
+
+    </FrameLayout>
+</LinearLayout>

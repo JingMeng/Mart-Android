@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="160dp"
+    android:paddingTop="12dp"
+    android:paddingRight="5dp"
+    android:paddingLeft="5dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@mipmap/user_bg"
+        android:layout_width="match_parent"
+        android:id="@+id/icon"
+        android:scaleType="centerCrop"
+        android:layout_height="112dp" />
+
+    <TextView
+        android:id="@+id/id"
+        tools:text="NO.25"
+        style="@style/rewardListId" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:lines="1"
+        android:text="公司网站开发"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/font_black_6"
+        android:textSize="15sp"
+        android:layout_below="@id/icon"
+        android:id="@+id/name"
+        android:gravity="center_vertical"
+        android:layout_height="21dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:lines="1"
+        android:gravity="center_vertical"
+        android:layout_height="21dp"
+        android:id="@+id/price"
+        android:text="$ 20,000"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/money_color_yellow"
+        android:textSize="15sp"
+        android:layout_below="@id/name" />
+
+</RelativeLayout>
+
+        

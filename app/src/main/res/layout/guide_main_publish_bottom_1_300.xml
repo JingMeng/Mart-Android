@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@mipmap/guide_main_activity_bottom0" />-->
+
+
+    <com.cpiz.android.bubbleview.BubbleTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/bottomNavigation"
+        android:padding="6dp"
+        android:id="@+id/toolTip300"
+        android:text="Get your apps ready for Android 6.0 Marshmallow! "
+        android:textColor="@android:color/white" />
+
+</FrameLayout>

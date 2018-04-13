@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flyco.roundview.RoundTextView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="14dp"
+    android:paddingRight="14dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="10dp"
+    android:text="Web 网站"
+    android:textColor="#FF727F8F"
+    android:textSize="14sp"
+    android:gravity="center"
+    app:rv_cornerRadius="100dp"
+    app:rv_strokeColor="#FFDDE3EB"
+    app:rv_strokeWidth="1dp"
+    android:layout_width="wrap_content"
+    android:layout_height="28dp"
+    tools:showIn="@layout/activity_v2_coder_detail" />

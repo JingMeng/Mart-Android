@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divide"
+    tools:context="net.coding.mart.developers.SavePriceActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/YellowTipTitleTextView"
+            android:layout_marginBottom="15dp"
+            android:minHeight="30dp"
+            android:text="您保存／提交的项目，可在我发布的项目列表查看或编辑" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/stand_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_15">
+
+            <TextView
+                style="@style/EditTextTitle"
+                android:paddingTop="0dp"
+                android:layout_marginTop="0dp"
+                android:text="项目名称 *" />
+
+            <EditText
+                android:id="@+id/name"
+                style="@style/SingleLineEditText"
+                android:hint="填写项目名称（必填）" />
+
+            <include layout="@layout/divide_1" />
+
+            <TextView
+                style="@style/EditTextTitle"
+                android:layout_marginTop="@dimen/padding_15"
+                android:text="项目描述 *" />
+
+            <EditText
+                android:id="@+id/description"
+                style="@style/MulLineEditText"
+                android:layout_marginBottom="0dp"
+                android:hint="填写项目描述" />
+
+        </LinearLayout>
+
+        <include layout="@layout/divide_10_top_bottom" />
+
+        <Button
+            android:id="@+id/sendButton"
+            style="@style/SendButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:text="确认保存" />
+
+    </LinearLayout>
+
+</ScrollView>
+

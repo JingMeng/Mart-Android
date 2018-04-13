@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp1080_149"
+            android:layout_marginLeft="@dimen/dp1080_50"
+            android:gravity="center_vertical"
+            android:text="手机号码验证"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp1080_53" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dip"
+            android:layout_marginLeft="@dimen/dp1080_50"
+            android:layout_marginRight="@dimen/dp1080_50"
+            android:background="#4289DB"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp1080_50"
+            android:layout_marginRight="@dimen/dp1080_50"
+            android:layout_marginTop="@dimen/dp1080_45"
+            android:layout_marginBottom="@dimen/dp1080_45"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/EditTextTitle"
+                    android:layout_marginTop="0dp"
+                    android:text="手机" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/phoneValid"-->
+                <!--style="@style/EditTextTitle"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:layout_marginTop="@dimen/padding_15"-->
+                <!--android:text="已验证"-->
+                <!--android:textColor="@color/font_green" />-->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/sendPhoneMessage"
+                    style="@style/EditTextTitle"
+                    android:layout_width="80dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_height="25dp"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/phone_message_bg_small"
+                    android:gravity="center"
+                    android:text="发送验证码"
+                    android:textColor="@color/phone_message" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/phone"
+                    style="@style/MulLineEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="常用电话号码"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:minHeight="0dp"
+                    android:paddingLeft="70dp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/countryCode"
+                    style="@style/MulLineEditText"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:lines="1"
+                    android:minHeight="0dp"
+                    android:singleLine="true"
+                    tools:text="+868" />
+
+                <EditText
+                    android:id="@+id/phoneCode"
+                    style="@style/MulLineEditText"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:hint="验证码"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:minHeight="0dp"
+                    android:singleLine="true" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View style="@style/DivideLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_botton_height"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/leftButton"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="取消" />
+
+            <View
+                android:id="@+id/buttonDivide0"
+                style="@style/DivideLineVer" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/rightButton"
+                android:layout_width="0dip"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="确定" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

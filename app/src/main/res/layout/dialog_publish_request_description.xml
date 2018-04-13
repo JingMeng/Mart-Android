@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_15">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="招募要求范例"
+            android:textColor="@color/font_black_2"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View style="@style/DialogTopDivideLine" />
+
+    <TextView
+        style="@style/tip_dialog_item_title"
+        android:text="招募要求" />
+
+    <TextView
+        style="@style/tip_dialog_item_content"
+        android:text="1. 有 O2O、移动商城相关产品开发经验；\n2. 精通 Java 或 PHP，熟悉 jQuery、 JavaScript、Maven、Redis 等技术，熟练使用  MySQL、Oracle、SQLServer 等关系型数据库，熟悉 NoSQL 数据库如 mongo、redis 等；\n3. 参与项目的开发成员需要提前全面了解项目和代码管理工具 Coding 的使用方法；\n4. 深圳地区开发者优先；\n5. 时间较为自由充裕，可以在工作日的工作时间进行沟通交流。" />
+
+</LinearLayout>

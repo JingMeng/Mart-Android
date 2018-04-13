@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divide"
+    tools:context="net.coding.mart.activity.user.AddProjectExpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/stand_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_15">
+
+
+            <TextView
+                style="@style/EditTextTitle"
+                android:paddingTop="0dp"
+                android:text="项目名称 *" />
+
+
+            <EditText
+                android:id="@+id/name"
+                style="@style/SingleLineEditText"
+                android:hint="最多30字符" />
+
+            <include layout="@layout/divide_1" />
+
+
+            <TextView
+                style="@style/EditTextTitle"
+                android:layout_marginTop="@dimen/padding_15"
+                android:text="项目类型 *" />
+
+            <TextView
+                android:id="@+id/jobTypeTextView"
+                style="@style/FullSingleLineEditText"
+                android:focusable="false"
+                android:hint="请选择" />
+
+            <TextView
+                style="@style/EditTextTitle"
+                android:text="项目时间 *" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/startTime"
+                    style="@style/FullSingleLineEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableRight="@mipmap/ic_role_time"
+                    android:focusable="false"
+                    android:hint="起始时间" />
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/divide" />
+
+                <TextView
+                    android:id="@+id/endTime"
+                    style="@style/FullSingleLineEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableRight="@mipmap/ic_role_time"
+                    android:focusable="false"
+                    android:hint="结束时间" />
+
+            </LinearLayout>
+
+
+            <TextView
+                style="@style/EditTextTitle"
+                android:layout_marginTop="@dimen/padding_15"
+                android:text="行业 *" />
+
+            <TextView
+                android:id="@+id/jobIndustryTextView"
+                style="@style/FullSingleLineEditText"
+                android:focusable="false"
+                android:hint="最多三个行业标签" />
+
+            <TextView
+                style="@style/EditTextTitle"
+                android:layout_marginTop="@dimen/padding_15"
+                android:text="项目描述 *" />
+
+            <net.coding.mart.common.widget.WordCountEditText
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:hint="请输入项目描述，长度100－2000字符"
+                app:wordCountMax="2000"
+                app:wordCountMin="100" />
+
+            <TextView
+                style="@style/EditTextTitle"
+                android:layout_marginTop="@dimen/padding_15"
+                android:text="我的职责 *" />
+
+            <net.coding.mart.common.widget.WordCountEditText
+                android:id="@+id/duty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:hint="请输入您在项目中的职责，长度50－1000字符。"
+                app:wordCountMax="1000"
+                app:wordCountMin="50" />
+
+            <TextView
+                style="@style/EditTextTitle"
+                android:paddingTop="0dp"
+                android:text="展示链接" />
+
+            <EditText
+                android:id="@+id/link"
+                style="@style/SingleLineEditText"
+                android:hint="输入展示链接" />
+
+            <include layout="@layout/divide_1" />
+
+            <LinearLayout
+                android:id="@+id/fileLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/divide_10_top_bottom" />
+
+        <Button
+            android:id="@+id/sendButton"
+            style="@style/SendButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:text="保存" />
+
+
+    </LinearLayout>
+</ScrollView>
+

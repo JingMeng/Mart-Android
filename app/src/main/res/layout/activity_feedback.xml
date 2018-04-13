@@ -1,0 +1,169 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:background="@color/divide"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/stand_bg"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_15">
+
+            <TextView
+                    style="@style/EditTextTitle"
+                    android:layout_marginTop="0dp"
+                    android:text="问题描述"/>
+
+            <TextView
+                    style="@style/EditTextTip"
+                    android:layout_marginTop="@dimen/padding_10"
+                    android:text="描述您遇到的问题，码市会尽快定位原因"/>
+
+            <TextView
+                    style="@style/EditTextTitle"
+                    android:text="码市注册手机号 / 邮箱 / GK *"/>
+
+            <EditText
+                    android:id="@+id/globalKey"
+                    style="@style/SingleLineEditText"
+                    android:hint="输入码市注册手机号 / 邮箱 / GK"/>
+
+            <include layout="@layout/divide_1"/>
+
+
+            <TextView
+                    style="@style/EditTextTitle"
+                    android:layout_marginTop="@dimen/padding_15"
+                    android:text="反馈类型（可多选）*"/>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="60dp">
+
+                <CheckBox
+                        android:id="@+id/type0"
+                        android:text="意见与建议"
+                        style="@style/MartCheckBox"/>
+
+                <CheckBox
+                        android:id="@+id/type1"
+                        android:text="投诉"
+                        android:layout_centerHorizontal="true"
+                        style="@style/MartCheckBox"/>
+
+                <CheckBox
+                        android:id="@+id/type2"
+                        android:layout_alignParentRight="true"
+                        android:text="项目纠纷"
+                        style="@style/MartCheckBox"/>
+
+                <CheckBox
+                        android:id="@+id/type3"
+                        android:text="BUG 反馈"
+                        android:layout_alignParentBottom="true"
+                        style="@style/MartCheckBox"/>
+
+                <CheckBox
+                        android:id="@+id/type4"
+                        android:text="其它"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        style="@style/MartCheckBox"/>
+
+            </RelativeLayout>
+
+
+            <TextView
+                    style="@style/EditTextTitle"
+                    android:layout_marginTop="@dimen/padding_15"
+                    android:text="反馈内容 *"/>
+
+            <EditText
+                    android:id="@+id/content"
+                    style="@style/MulLineEditText"
+                    android:hint="反馈内容"/>
+
+            <TextView
+                    style="@style/EditTextTitle"
+                    android:layout_marginTop="@dimen/padding_15"
+                    android:text="联系信息"/>
+
+            <TextView
+                    style="@style/EditTextTip"
+                    android:layout_marginTop="@dimen/padding_10"
+                    android:text="码市顾问将会在 1-2 个工作日与您联系"/>
+
+            <TextView
+                    style="@style/EditTextTitle"
+                    android:layout_marginTop="20dp"
+                    android:text="姓名 *"/>
+
+            <EditText
+                    android:id="@+id/name"
+                    style="@style/SingleLineEditText"
+                    android:hint="姓名"/>
+
+            <include layout="@layout/divide_1"/>
+
+            <TextView
+                    style="@style/EditTextTitle"
+                    android:layout_marginTop="@dimen/padding_15"
+                    android:text="邮箱 *"/>
+
+            <EditText
+                    android:id="@+id/email"
+                    style="@style/SingleLineEditText"
+                    android:hint="邮箱"/>
+
+            <include layout="@layout/divide_1"/>
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="@dimen/padding_15"
+                    android:orientation="horizontal">
+
+                <EditText
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:id="@+id/editValify"
+                        style="@style/MulLineEditText"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:hint="验证码"
+                        android:minHeight="0dp"
+                        android:singleLine="true"/>
+
+                <ImageView
+                        android:id="@+id/imageValify"
+                        android:layout_width="72dp"
+                        android:layout_height="30dp"
+                        android:scaleType="fitCenter"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="@dimen/padding_10"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/divide_10_top_bottom"/>
+
+        <Button
+                android:id="@+id/sendFeedback"
+                style="@style/SendButton"
+                android:layout_width="match_parent"
+                android:enabled="false"
+                android:layout_height="wrap_content"
+                android:text="提交"/>
+
+
+    </LinearLayout>
+</ScrollView>

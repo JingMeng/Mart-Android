@@ -1,0 +1,155 @@
+<net.coding.mart.common.widget.ListenScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ia_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="net.coding.mart.activity.setting.enterprise.EnterpriceIdentitySubmitFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f3f3f3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ia_base_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:paddingBottom="12dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp"
+            tools:visibility="visible">
+
+            <TextView
+                style="@style/YellowTipTitleTextView"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="@null"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="0dp"
+                android:textColor="@color/font_black_9"
+                android:paddingTop="0dp"
+                android:text="请填写正确的企业信息，码市承诺不会透露给任何第三方；认证审核需要 1 - 3 个工作日。" />
+
+            <TextView
+                style="@style/EditTextTitle"
+                android:text="企业名称 *" />
+
+            <EditText
+                android:id="@+id/name"
+                style="@style/SingleLineEditText"
+                android:layout_marginBottom="14dp"
+                android:hint="企业名称" />
+
+            <include layout="@layout/divide_1" />
+
+            <TextView
+                style="@style/EditTextTitle"
+                android:layout_marginTop="20dp"
+                android:text="营业执照编号 *" />
+
+            <EditText
+                android:id="@+id/icard"
+                style="@style/SingleLineEditText"
+                android:layout_marginBottom="14dp"
+                android:hint="营业执照编号"
+                android:maxLength="18" />
+
+            <include layout="@layout/divide_1" />
+
+
+        </LinearLayout>
+
+        <include layout="@layout/divide_10_top_bottom" />
+
+        <include layout="@layout/divide_1" />
+
+        <!-- 身份证 正面图片 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/EditTextTitle"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="15dp"
+                    android:text="营业执照扫描件 *" />
+
+
+            </RelativeLayout>
+
+            <include layout="@layout/divide_1" />
+
+            <RelativeLayout
+                android:id="@+id/LayoutCardPositive"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/card_background"
+                tools:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/enterprise_place_holder" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="上传营业执照扫描件"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/businessLicence"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:riv_corner_radius="3dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/SendButton"
+            android:id="@+id/sendButton"
+            android:text="提交审核" />
+
+    </LinearLayout>
+
+</net.coding.mart.common.widget.ListenScrollView>
+
+
+
+
+

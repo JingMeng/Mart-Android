@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        style="@style/YellowTipTitleTextView"
+        android:text="完成码市认证可获得认证徽章，让更多人选择你。" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:background="@color/stand_bg"
+        android:paddingTop="15dp">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="7dp"
+            android:layout_alignLeft="@+id/circle1"
+            android:layout_alignRight="@+id/circle2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/divide" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="7dp"
+            android:layout_alignLeft="@+id/circle2"
+            android:layout_alignRight="@+id/circle3"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/divide" />
+
+        <ImageView
+            android:id="@+id/circle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:src="@mipmap/identity_circle_light_1" />
+
+        <ImageView
+            android:id="@+id/circle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="22dp"
+            android:src="@mipmap/identity_circle_light_2" />
+
+        <ImageView
+            android:id="@+id/circle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="22dp"
+            android:src="@mipmap/identity_circle_light_3" />
+
+        <TextView
+            android:id="@+id/identity1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:text="实名认证"
+            android:textColor="@color/font_black_2"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/identity2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:text="签署身份认证授权与承诺书"
+            android:textColor="@color/font_black_2"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="完成认证"
+            android:textColor="@color/font_black_2"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/divide_10_top_bottom" />
+
+</merge>
+

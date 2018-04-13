@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_invoice_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divide"
+    android:orientation="vertical"
+    tools:context="net.coding.mart.activity.user.setting.InvoiceMainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/stand_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:text="可开票金额（元）"
+            android:textColor="@color/font_black_2"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/invoiceAmout"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/money_color_yellow"
+            android:textSize="45sp"
+            tools:text="3000.00" />
+
+        <net.coding.mart.common.widget.ListItem1
+            android:layout_width="match_parent"
+            android:id="@+id/invoicing"
+            android:layout_height="wrap_content"
+            app:itemBottomLine="false"
+            app:itemIcon="@mipmap/ic_setting_invoice_disable"
+            app:itemText="开具发票" />
+
+    </LinearLayout>
+
+    <include layout="@layout/divide_5_bottom" />
+
+    <TextView
+        android:id="@+id/textTip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:lineSpacingExtra="2dp"
+        android:text="码市 APP 端暂未上线“开具发票”功能，请访问码市网页端 codemart.com 提出开票申请。\n如有疑问，请 联系客服"
+        android:textColor="@color/font_black_9"
+        android:textSize="14sp" />
+
+</LinearLayout>

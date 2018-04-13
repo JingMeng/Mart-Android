@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginBottom="12dp"
+    android:background="#e8f1ff"
+    android:gravity="center_vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <TextView
+        android:id="@+id/fileName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#4289db"
+        android:textSize="15sp"
+        tools:text="项目文件.pdf" />
+
+    <TextView
+        android:id="@+id/downloadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#4289db"
+        android:padding="5dp"
+        android:text="下载"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:visibility="gone" />
+</LinearLayout>

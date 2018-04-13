@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divide"
+    android:orientation="vertical"
+    tools:context="net.coding.mart.activity.mpay.SetWithdrawAccountActivity">
+
+    <TextView
+        style="@style/YellowTipTitleTextView"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content"
+        android:text="开发宝提现暂时只支持打款到支付宝，请填写您的真实姓名和对应的支付宝帐号。提交验证后，码市工作人员会在 1 个工作日内进行审核验证" />
+
+    <View
+        style="@style/DivideSectionTop5"
+        android:layout_marginTop="10dp" />
+
+    <RelativeLayout style="@style/SettingListItem">
+
+        <TextView
+            style="@style/SettingListItemText1"
+            android:text="账户类型" />
+
+        <TextView
+            android:id="@+id/oldPassword"
+            style="@style/SettingListItemText2ModifyPassword"
+            android:background="@null"
+            android:text="支付宝"
+            android:textColor="@color/font_black_2" />
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/divide_1_12" />
+
+
+    <RelativeLayout style="@style/SettingListItem">
+
+        <TextView
+            style="@style/SettingListItemText1"
+            android:text="姓名" />
+
+        <EditText
+            android:id="@+id/name"
+            style="@style/SettingListItemText2ModifyPassword"
+            android:background="@null"
+            android:hint="请输入姓名" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/divide_1_12" />
+
+    <RelativeLayout style="@style/SettingListItem">
+
+        <TextView
+            style="@style/SettingListItemText1"
+            android:text="支付宝" />
+
+        <EditText
+            android:id="@+id/alipay"
+            style="@style/SettingListItemText2ModifyPassword"
+            android:background="@null"
+            android:hint="请输入绑定的支付宝帐号"
+            tools:text="" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/divide_10_bottom" />
+
+    <Button
+        android:id="@+id/sendButton"
+        style="@style/SendButton"
+        android:layout_marginTop="20dp"
+        android:enabled="false"
+        android:text="提交验证" />
+
+</LinearLayout>

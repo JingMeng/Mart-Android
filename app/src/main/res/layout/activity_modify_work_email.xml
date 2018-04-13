@@ -1,0 +1,103 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divide">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/divide"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layoutRoot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="7.5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7.5dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <net.coding.mart.common.widget.LoginEditText
+                            android:id="@+id/editEmail"
+                            style="@style/SingleLineEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="53dp"
+                            android:layout_marginBottom="0dp"
+                            android:layout_marginLeft="@dimen/padding_15"
+                            android:layout_marginRight="@dimen/padding_15"
+                            android:layout_marginTop="0dp"
+                            app:hint="输入邮箱地址"
+                            app:loginInput="text"
+                            app:topLine="false" />
+
+                    </LinearLayout>
+
+                    <View style="@style/DivideLine_15" />
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="53dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <net.coding.mart.common.widget.LoginEditText
+                            android:id="@+id/editCode"
+                            style="@style/SingleLineEditText"
+                            android:layout_width="0dp"
+                            android:layout_height="53dp"
+                            android:layout_marginBottom="0dp"
+                            android:layout_marginLeft="@dimen/padding_15"
+                            android:layout_marginRight="@dimen/padding_15"
+                            android:layout_marginTop="0dp"
+                            android:layout_weight="1"
+                            android:inputType="phone"
+                            app:hint="输入邮件中的验证码"
+                            app:loginInput="text"
+                            app:topLine="false" />
+
+                        <View
+                            style="@style/DivideLineVer"
+                            android:layout_height="20dp" />
+
+                        <TextView
+                            android:id="@+id/sendPhoneMessage"
+                            android:text="发送验证邮件"
+                            android:layout_width="110dp"
+                            style="@style/sendMessageRegister" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <include layout="@layout/divide_10_top_bottom" />
+
+                <Button
+                    android:id="@+id/loginButton"
+                    style="@style/SendButton"
+                    android:enabled="false"
+                    android:text="提交" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

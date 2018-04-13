@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divide">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/divide"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layoutRoot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="7.5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="53dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <net.coding.mart.common.widget.LoginEditText
+                        android:id="@+id/enterpriseEdit"
+                        style="@style/EmailEdit"
+                        android:visibility="visible"
+                        app:hint="企业名称"
+                        app:topLine="false" />
+
+                    <View
+                        android:id="@+id/enterpriseLine"
+                        style="@style/DivideLine_15" />
+
+                    <net.coding.mart.common.widget.LoginEditText
+                        android:id="@+id/globalKeyEdit"
+                        style="@style/EmailEdit"
+                        android:visibility="visible"
+                        app:hint="用户名"
+                        app:topLine="false" />
+
+                    <include layout="@layout/divide_1_15" />
+
+                    <include layout="@layout/validate_phone_layout" />
+
+                </LinearLayout>
+
+                <include layout="@layout/divide_10_top_bottom" />
+
+                <Button
+                    android:id="@+id/loginButton"
+                    style="@style/SendButton"
+                    android:enabled="true"
+                    android:text="下一步" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

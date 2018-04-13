@@ -1,0 +1,187 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="56dp"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.33"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="169dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.66"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="337dp" />
+
+    <FrameLayout
+        android:id="@+id/other"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline8"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="15dp"
+            android:drawableTop="@mipmap/ic_reward_main_other"
+            android:gravity="center"
+            android:text="其它"
+            android:textColor="#FF545F70"
+            android:textSize="15sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/app"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="15dp"
+            android:drawableTop="@mipmap/ic_reward_main_mobile"
+            android:gravity="center"
+            android:text="移动应用 App"
+            android:textColor="#FF545F70"
+            android:textSize="15sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/weixin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/app"
+        app:layout_constraintTop_toTopOf="@+id/guideline7">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="15dp"
+            android:drawableTop="@mipmap/ic_reward_main_weixin"
+            android:gravity="center"
+            android:text="微信应用"
+            android:textColor="#FF545F70"
+            android:textSize="15sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/html5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline8"
+        app:layout_constraintLeft_toRightOf="@+id/weixin"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline7">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="15dp"
+            android:drawableTop="@mipmap/ic_reward_main_html5"
+            android:gravity="center"
+            android:text="HTML5 应用"
+            android:textColor="#FF545F70"
+            android:textSize="15sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/web"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/app"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="15dp"
+            android:drawableTop="@mipmap/ic_reward_main_web"
+            android:gravity="center"
+            android:text="Web 网站"
+            android:textColor="#FF545F70"
+            android:textSize="15sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/weixinApp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/app"
+        app:layout_constraintTop_toBottomOf="@+id/weixin"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="15dp"
+            android:drawableTop="@mipmap/ic_reward_main_weixin_app"
+            android:gravity="center"
+            android:text="小程序"
+            android:textColor="#FF545F70"
+            android:textSize="15sp" />
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

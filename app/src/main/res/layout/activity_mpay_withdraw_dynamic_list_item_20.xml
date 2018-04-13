@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/layout20"
+    android:layout_height="110dp"
+    android:background="@color/stand_bg">
+
+    <View
+        android:id="@+id/lineTop"
+        android:layout_width="5dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="52.7dp"
+        android:background="#5BC673" />
+
+
+    <View
+        android:id="@+id/lineBottom"
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="52.7dp"
+        android:layout_marginTop="63.7dp"
+        android:background="#FFDDE3EB" />
+
+    <View
+        android:id="@+id/icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="30dp"
+        android:background="@mipmap/recharge_dynamic_20_ok" />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="39dp"
+        android:layout_toRightOf="@id/icon"
+        android:textColor="#FF2D3238"
+        android:textSize="16sp"
+        android:text="提现中" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/title"
+        android:layout_below="@id/title"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        tools:text="2016-05-24 21:02" />
+
+</RelativeLayout>

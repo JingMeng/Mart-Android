@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+
+    <color name="white">#ffffffff</color>
+    <color name="white_pressed">#ffd5d5d5</color>
+    <color name="font_black">#010101</color>
+    <drawable name="black">#ff000000</drawable>
+    <color name="black">#ff000000</color>
+
+    <color name="font_green">#FF4289DB</color>
+    <color name="font_black_0">#000000</color>
+    <color name="font_black_content">#FF273444</color>
+    <color name="font_black_2">#FF273444</color>
+    <color name="font_2">#FF273444</color>
+    <color name="font_black_comment">#ff666666</color>
+    <color name="font_black_6">#666666</color>
+    <color name="font_6">#666666</color>
+    <color name="font_black_8">#FF808080</color>
+    <color name="font_black_9">#999999</color>
+    <color name="font_9">#999999</color>
+    <color name="font_white">#ffffffff</color>
+    <color name="font_white_disable">#99ffffff</color>
+
+    <color name="font_black_80">#808080</color>
+    <color name="font_red">#ffE84D60</color>
+
+    <color name="window_background">#FFF5F5F5</color>
+
+
+    <color name="white_pressed1">#ffdfdfdf</color>
+
+
+    <color name="blue_light">#C6DBF4</color>
+    <color name="money_color_yellow">#F6A823</color>
+
+    <drawable name="bg_maopao_comment">#ffeeeeee</drawable>
+
+    <color name="divide">#fff0f2f5</color>
+    <color name="divide_line">#ffdddddd</color>
+    <color name="stand_bg">#FFFFFF</color>
+
+    <color name="transparent">#00000000</color>
+    <drawable name="transparent">#00000000</drawable>
+
+    <color name="font_blue">#FF4289DB</color>
+    <color name="font_blue_light">#C9D6E5</color>
+    <color name="font_blue_disable">#994289DB</color>
+    <color name="font_blue_press">#EE4289DB</color>
+    <color name="font_blue_dark">#FF4289DB</color>
+
+    <!-- user info tags -->
+    <color name="user_info_tags_font_1">#999999</color>
+    <color name="user_info_tags_font_2">#FFFFFF</color>
+    <!-- user info tags end -->
+
+
+    <color name="tip_font_red">#cf4657</color>
+    <color name="tip_font_red_bg">#F6E1E1</color>
+
+    <color name="tool_tip_background">#CC262728</color>
+
+
+    <!--二维码扫描界面-->
+
+    <color name="action_bar_background">#FF4187DB</color>
+    <color name="window_bar_background">#FF346BAF</color>
+    <color name="text_pink">#ffff497f</color>
+
+    <color name="addjob_text_blue">#ff30A8E1</color>
+    <color name="addjob_radio_text_blue">#FF4289DB</color>
+    <color name="addjob_radio_text_gray">#ffcccccc</color>
+
+    <color name="popDialogBg">#99000000</color>
+
+    <!-- 完善资料 -->
+    <color name="warn_or_waiting_font_color">#f5a623</color>
+
+    <color name="reward_detail_file_background">#E8F1FF</color>
+
+    <color name="bottom_bar_color">#F9F9F9</color>
+
+    <color name="guide_background">#373D47</color>
+
+    <color name="examination_result_failed_font_color">#FF4B80</color>
+
+    <color name="list_tip_background">#FFF6DD</color>
+
+</resources>

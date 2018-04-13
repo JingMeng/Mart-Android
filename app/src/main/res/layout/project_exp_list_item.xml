@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="71dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/projectName"
+        android:textColor="@color/font_black_2"
+        tools:text="一个项目名称"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/selectIcon" />
+
+    <TextView
+        android:layout_alignLeft="@id/projectName"
+        android:id="@+id/projectTime"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        tools:text="项目时间：2016.03 - 2016.07"
+        android:layout_width="match_parent"
+        android:textColor="@color/font_black_6"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/selectIcon" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/selectIcon"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/ic_task_status_list_check"
+        android:layout_marginRight="15dp"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@id/projectName"
+        style="@style/DivideLine" />
+
+</RelativeLayout>

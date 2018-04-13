@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/mpay_dynamic_list_item_height"
+    android:foreground="?attr/selectableItemBackground"
+    android:background="@color/stand_bg"
+    android:paddingTop="10dp"
+    tools:context="net.coding.mart.activity.mpay.MPayDynamicListActivity">
+
+    <TextView
+        tools:text="第一阶梯-全栈开发"
+        android:layout_width="wrap_content"
+        android:textColor="#FF434A54"
+        android:maxLines="2"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="16sp"
+        android:id="@+id/title"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        tools:text="项目托管"
+        android:layout_below="@id/title"
+        android:layout_marginTop="2.3dp"
+        android:textSize="15sp"
+        android:textColor="@color/font_black_9"
+        android:layout_alignLeft="@id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/content" />
+
+    <TextView
+        tools:text="-2,000.00"
+        android:textSize="18sp"
+        android:id="@+id/money"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/warn_or_waiting_font_color"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@id/money"
+        android:layout_marginTop="5.3dp"
+        tools:text="已完成"
+        android:textSize="12sp"
+        android:layout_alignRight="@id/money"
+        android:id="@+id/mpayBalance"
+        android:textColor="@color/font_black_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_marginTop="12dp"
+        tools:text="2016-05-12  15:30"
+        android:layout_below="@id/mpayBalance"
+        android:textColor="@color/font_black_9"
+        android:layout_alignRight="@id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_alignParentBottom="true"
+        style="@style/DivideLine" />
+</RelativeLayout>

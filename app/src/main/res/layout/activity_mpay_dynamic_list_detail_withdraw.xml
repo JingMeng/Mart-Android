@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="net.coding.mart.activity.mpay.MPayRechargeActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提现进度"
+        android:textColor="@color/font_black_6"
+        android:textSize="15sp" />
+
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:id="@+id/flowLayout"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="150dp">
+                
+                <View
+                    android:layout_width="2dp"
+                    android:id="@+id/line1"
+                    android:layout_height="55dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/divide"
+                    android:layout_marginTop="10dp" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="55dp"
+                    android:id="@+id/line2"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/divide"
+                    android:layout_marginBottom="10dp" />
+
+                <ImageView
+                    android:src="@mipmap/withdraw_small_10"
+                    android:layout_width="20dp"
+                    android:id="@+id/circle1"
+                    android:layout_height="20dp" />
+
+                <ImageView
+                    android:src="@mipmap/withdraw_small_10"
+                    android:layout_width="20dp"
+                    android:id="@+id/circle2"
+                    android:layout_centerVertical="true"
+                    android:layout_height="20dp" />
+
+                <ImageView
+                    android:src="@mipmap/withdraw_small_10"
+                    android:layout_width="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/circle3"
+                    android:layout_height="20dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/title1"
+                    android:textColor="@color/font_black_2"
+                    android:layout_width="wrap_content"
+                    android:text="提交申请"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/time1"
+                    android:textColor="@color/font_black_9"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="3dp"
+                    tools:text="2016-05-24 33.33"
+                    android:layout_below="@id/title1"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/title2"
+                    android:layout_marginTop="68dp"
+                    android:textColor="@color/font_black_2"
+                    android:layout_width="wrap_content"
+                    android:text="提交中"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/time2"
+                    android:textColor="@color/font_black_9"
+                    android:layout_width="wrap_content"
+                    tools:text="2016-05-24 33.33"
+                    android:layout_below="@id/title2"
+                    android:layout_marginTop="3dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/title3"
+                    android:layout_marginTop="131dp"
+                    android:textColor="@color/font_black_2"
+                    android:layout_width="wrap_content"
+                    android:text="提现完成"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/time3"
+                    android:textColor="@color/font_black_9"
+                    android:layout_width="wrap_content"
+                    tools:text="2016-05-24 33.33"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@id/title3"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/zhifubaoAccount"
+        tools:text="11113333"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/flowLayout"
+        android:textColor="@color/font_black_9"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="支付宝帐号"
+        android:layout_alignBottom="@id/zhifubaoAccount"
+        android:id="@+id/typeAccount"
+        android:textColor="@color/font_black_6"
+        android:textSize="15sp" />
+
+</RelativeLayout>

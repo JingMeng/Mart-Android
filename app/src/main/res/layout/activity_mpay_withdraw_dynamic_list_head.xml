@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="15dp"
+    android:background="@drawable/rect_card"
+    tools:context="net.coding.mart.activity.mpay.MPayWithdrawDynamicActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <View
+                android:id="@+id/icon"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:background="@mipmap/developer_pay_success" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/icon"
+                android:text="您的提现申请已成功提交！"
+                android:textColor="@color/font_black_2"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/title"
+                android:layout_below="@id/title"
+                android:layout_marginTop="2dp"
+                android:text="提现款项会在 7 个工作日内转至您的支付宝账户，请注意相关信息提醒。"
+                android:textColor="#FF979FA8"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_marginTop="12dp"
+            android:id="@+id/divideLine"
+            style="@style/DivideLine" />
+
+        <TextView
+            android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divideLine"
+            android:layout_marginTop="12dp"
+            tools:text="提现金额：¥30,000" />
+
+        <TextView
+            android:id="@+id/zhifubaoAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/money"
+            android:layout_marginTop="10dp"
+            tools:text="支付宝帐号：account@gmail.com（姓名）" />
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1080_144"
+            android:layout_alignParentBottom="true"
+            android:background="#414952">
+
+            <ImageView
+                android:id="@+id/iv_function"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp1080_60"
+                android:padding="10dip"
+                android:src="@mipmap/developer_function" />
+
+
+            <TextView
+                android:id="@+id/tv_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp1080_180"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp1080_45"
+                tools:text="@string/huoguo_tip_font_count" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_ok"
+                android:layout_width="@dimen/dp1080_330"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="#4289DB"
+                android:text="计算结果"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp1080_54" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/rl_bottom"
+            android:orientation="vertical">
+
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dip"
+                    app:tabGravity="fill"
+                    app:tabIndicatorColor="#4289DB"
+                    app:tabMode="fixed"
+                    app:tabSelectedTextColor="#4289DB"
+                    app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+                    app:tabTextColor="#222222"></android.support.design.widget.TabLayout>
+
+
+            </android.support.design.widget.AppBarLayout>
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"></android.support.v4.view.ViewPager>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

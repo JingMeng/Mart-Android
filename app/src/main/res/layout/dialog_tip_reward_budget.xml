@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="@dimen/padding_15"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginBottom="7dp"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/DialogTitle"
+            android:id="@+id/title"
+            android:text="@string/reward_budget_tip_title" />
+
+        <ImageView
+            android:id="@+id/demo_closebtn"
+            style="@style/DialogCloseButton" />
+    </RelativeLayout>
+
+    <View
+        style="@style/DialogTopDivideLine" />
+
+    <TextView
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/message"
+        android:textColor="@color/font_black_6"
+        android:text="@string/reward_budget_tip_message"
+        style="@style/tip_dialog_item_content" />
+
+</LinearLayout>

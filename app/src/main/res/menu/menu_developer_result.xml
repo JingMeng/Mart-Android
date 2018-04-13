@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context="net.coding.mart.developers.FunctionActivity">
+    <item android:id="@+id/function" android:title="功能"
+        android:icon="@mipmap/developer_function"
+        android:orderInCategory="100" app:showAsAction="always" />
+</menu>

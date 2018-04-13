@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="选择角色"
+        android:textColor="@color/font_black_2"
+        android:textSize="16sp" />
+
+    <View
+        style="@style/DivideLine"
+        android:background="@color/font_blue" />
+
+   <ListView
+       android:layout_width="match_parent"
+       android:id="@+id/listView"
+       android:divider="@null"
+       android:headerDividersEnabled="false"
+       android:dividerHeight="0dp"
+       android:layout_height="wrap_content" />
+</LinearLayout>

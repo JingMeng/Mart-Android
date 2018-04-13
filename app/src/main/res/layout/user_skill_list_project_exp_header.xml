@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/padding_15"
+    android:paddingRight="@dimen/padding_15" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="12dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/EditTextTitle"
+            android:id="@+id/projectExpTitle"
+            android:layout_marginTop="0dp"
+            android:text="项目经验 * " />
+
+        <TextView
+            style="@style/EditTextTitleTip"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@id/projectExpTitle"
+            android:text="（至少两个）" />
+
+        <TextView
+            android:text="添加"
+            android:drawableLeft="@mipmap/ic_skill_add_project_exp_small"
+            android:textColor="@color/font_blue"
+            android:textSize="12sp"
+            android:id="@+id/addProjectExpSmall"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/addProjectExp"
+        android:background="#E8F1FF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@mipmap/ic_skill_add_project_exp"
+            android:drawablePadding="5dp"
+            android:text="添加项目经验"
+            android:textColor="#4289DB"
+            android:textSize="15sp" />
+
+    </FrameLayout>
+
+</LinearLayout>

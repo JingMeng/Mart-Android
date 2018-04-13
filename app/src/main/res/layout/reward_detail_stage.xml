@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="stage"
+            type="net.coding.mart.json.reward.Stage" />
+
+        <variable
+            name="role"
+            type="net.coding.mart.json.reward.Role" />
+
+        <variable
+            name="coder"
+            type="net.coding.mart.json.reward.Coder" />
+
+        <variable
+            name="basicInfo"
+            type="net.coding.mart.json.reward.BasicInfo" />
+
+        <variable
+            name="stageUtil"
+            type="net.coding.mart.activity.reward.detail.RewardDetailUtil" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/sectionTopFirst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/divide">
+
+            <TextView
+                android:id="@+id/stagSection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="@dimen/padding_15"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="@{basicInfo.sectionString}"
+                android:textColor="@color/font_black_9"
+                android:textSize="15sp" />
+
+            <View style="@style/DivideSectionTop5" />
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/sectionTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/divide_5_top" />
+
+        </FrameLayout>
+
+        <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/stand_bg"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding_15"
+            android:paddingLeft="@dimen/padding_15"
+            android:paddingRight="@dimen/padding_15">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/roleName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text='@{String.format("%s（%s）", role.roleName, role.name)}'
+                    android:textColor="@color/font_black_2"
+                    android:textSize="18sp"
+                    tools:text="过过瘾" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/roleName"
+                    android:layout_marginTop="10dp"
+                    android:text='@{String.format("总金额：￥%s", role.totalPrice)}'
+                    android:textColor="@color/font_black_6"
+                    android:textSize="14sp"
+                    tools:text="总金额" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:text="支付剩余阶段"
+                    android:visibility="gone"
+                    android:textColor="@color/font_blue"
+                    android:id="@+id/payAllStage"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:background="@drawable/rect_blue_line" />
+
+            </RelativeLayout>
+
+            <View
+                style="@style/DivideLine"
+                android:layout_marginTop="10dp" />
+
+            <!--<include layout="@layout/reward_detail_stage_item"  />-->
+            <LinearLayout
+                android:id="@+id/stageLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+
+        <include layout="@layout/divide_5_bottom" />
+    </LinearLayout>
+</layout>

@@ -1,0 +1,124 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:background="@color/divide"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/rootLayout"
+            tools:context="net.coding.mart.user.identityAuthentication.IdentityFragment1">
+
+        <!--<include layout="@layout/identity_common_header" />-->
+
+        <include layout="@layout/divide_10_top"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:orientation="vertical"
+                android:paddingBottom="12dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="15dp"
+                tools:visibility="visible">
+
+            <TextView
+                    android:id="@+id/contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/identity_top_tip"
+                    android:textColor="@color/font_black_9"
+                    android:textSize="14sp"/>
+
+            <TextView
+                    style="@style/EditTextTitle"
+                    android:text="姓名 *"/>
+
+            <EditText
+                    android:id="@+id/name"
+                    style="@style/SingleLineEditText"
+                    android:layout_marginBottom="14dp"
+                    android:hint="30个字符"/>
+
+            <include layout="@layout/divide_1"/>
+
+            <TextView
+                    style="@style/EditTextTitle"
+                    android:layout_marginTop="20dp"
+                    android:text="身份证号 *"/>
+
+            <EditText
+                    android:id="@+id/idCard"
+                    style="@style/SingleLineEditText"
+                    android:layout_marginBottom="14dp"
+                    android:digits="1234567890xX"
+                    android:hint="15-18位"
+                    android:maxLength="18"/>
+
+            <include layout="@layout/divide_1"/>
+
+        </LinearLayout>
+
+        <include layout="@layout/divide_10_top_bottom"/>
+
+        <!-- 认证说明 -->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="18dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="认证说明"
+                    android:textColor="@color/font_black_0"
+                    android:textSize="18sp"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="#F6F6F6"
+                    android:lineSpacingMultiplier="1.5"
+                    android:padding="15dp"
+                    android:text="@string/identity_authentication_comment"
+                    android:textColor="@color/font_black_0"
+                    tools:visibility="visible"/>
+
+            <Button
+                    android:id="@+id/sendButton"
+                    style="@style/SendButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="15dp"
+                    android:enabled="true"
+                    android:text="提交审核"/>
+
+            <TextView
+                    android:id="@+id/agreeTerms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:lineSpacingExtra="2dp"
+                    android:text="点击『提交审核』代表您已仔细阅读上述「认证说明」\n并同意遵守《身份认证授权与承诺书》"
+                    android:textColor="@color/font_black_9"
+                    android:textSize="12sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

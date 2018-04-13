@@ -1,0 +1,70 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/divide"
+    android:layout_height="match_parent"
+    tools:context="net.coding.mart.user.identityAuthentication.IdentityFragment2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/stand_bg"
+        android:orientation="vertical">
+
+        <include layout="@layout/identity_common_header" />
+
+        <ImageView
+            android:id="@+id/qrIcon"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="160dp"
+            android:scaleType="fitCenter"
+            android:layout_height="160dp" />
+
+        <TextView
+            android:textColor="@color/font_black_2"
+            android:textSize="15sp"
+            android:text="签署流程"
+            android:paddingLeft="@dimen/padding_15"
+            android:paddingRight="@dimen/padding_15"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/font_black_6"
+            android:textSize="14sp"
+            android:id="@+id/terms1"
+            android:text="1、请使用您实名认证过的微信APP扫描上方二维码，仔细阅读“身份认证授权与承诺书”，并在指定区域完成电子签名。"
+            android:paddingLeft="@dimen/padding_15"
+            android:paddingRight="@dimen/padding_15"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/font_black_6"
+            android:textSize="14sp"
+            android:paddingLeft="@dimen/padding_15"
+            android:paddingRight="@dimen/padding_15"
+            android:text="2、签署“身份认证授权与承诺书后”即可完成认证，成为认证码士。"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/font_black_6"
+            android:textSize="14sp"
+            android:text="查看“身份认证授权与承诺书”"
+            android:id="@+id/identityTip"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="@dimen/padding_15"
+            android:paddingRight="@dimen/padding_15"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_height="wrap_content" />
+
+        <include layout="@layout/divide_10_bottom" />
+
+    </LinearLayout>
+</ScrollView>

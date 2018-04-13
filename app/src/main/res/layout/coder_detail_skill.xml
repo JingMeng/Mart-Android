@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="CoderDetailSkillBinding">
+
+        <import
+            alias="View"
+            type="android.view.View" />
+
+        <variable
+            name="data"
+            type="net.coding.mart.json.reward.user.Role" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        tools:showIn="@layout/activity_v2_coder_detail">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{data.nameInBracket()}"
+            android:textColor="#FF273444"
+            android:textSize="14sp"
+            android:paddingLeft="8dp"
+            tools:text="【设计师】" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="28dp"
+                android:gravity="center_vertical"
+                android:text="技能领域"
+                android:textColor="#FF273444"
+                android:textSize="14sp" />
+
+            <org.apmem.tools.layouts.FlowLayout
+                android:id="@+id/skillsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:visibility="@{data.softEngineer ? View.VISIBLE : View.GONE}">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_height="28dp"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:text="擅长技术"-->
+                <!--android:textColor="#FF273444"-->
+                <!--android:textSize="14sp" />-->
+
+            <!--<org.apmem.tools.layouts.FlowLayout-->
+                <!--android:id="@+id/goodAtLayout"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" />-->
+
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="28dp"
+                android:gravity="center_vertical"
+                android:text="特殊技能"
+                android:textColor="#FF273444"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{data.specialSkill}"
+                android:textColor="#FF727F8F"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>
+
+
+                    
