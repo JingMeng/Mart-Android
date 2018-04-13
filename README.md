@@ -1,3 +1,6 @@
+# 码市
+README: [English](./README_EN.md) | 中文
+
 # 简介
 码市是一个软件外包服务平台，通过智能匹配系统快速连接开发者与需求方，提供在线的项目管理工具与资金托管服务，提高软件交付的效率，保障需求方和开发者权益，帮助软件开发行业实现高效的资源匹配。
 
@@ -54,7 +57,7 @@
 ```
 
 # License
-Mart-Android 用的是 [MIT license][6] 。
+Mart-Android 用的是 [MIT license](./LICENSE) 。
 
 [1]: https://user-images.githubusercontent.com/1555670/38722457-8f5e3f10-3f30-11e8-8ea6-39be8778023e.jpg
 [1]: https://user-images.githubusercontent.com/1555670/38722457-8f5e3f10-3f30-11e8-8ea6-39be8778023e.jpg
@@ -62,7 +65,6 @@ Mart-Android 用的是 [MIT license][6] 。
 [3]: https://user-images.githubusercontent.com/1555670/38722459-8feecb3e-3f30-11e8-93b6-78054ff81305.jpg
 [4]: https://user-images.githubusercontent.com/1555670/38722460-904478fe-3f30-11e8-925e-90ca79327244.jpg
 [5]: https://user-images.githubusercontent.com/1555670/38722461-91017dfa-3f30-11e8-8fd2-7a9d437f4bcb.jpg
-[6]: License
 [7]: https://codemart.com
 [9]: https://play.google.com/store/apps/details?id=net.coding.mart
 [10]: http://sj.qq.com/myapp/detail.htm?apkName=net.coding.mart
